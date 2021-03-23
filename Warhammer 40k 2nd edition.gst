@@ -42,9 +42,21 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="0ac4-2a9a-0b56-10ba" name="Characters" hidden="false"/>
-    <categoryEntry id="5ae9-298e-9f0b-364a" name="Squads" hidden="false"/>
-    <categoryEntry id="3873-ad9b-45a5-5223" name="Support and Allies" hidden="false"/>
+    <categoryEntry id="0ac4-2a9a-0b56-10ba" name="Characters" hidden="false">
+      <constraints>
+        <constraint field="limit::30e6-896a-8419-941b" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="f5a6-8906-ca82-56cd" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="5ae9-298e-9f0b-364a" name="Squads" hidden="false">
+      <constraints>
+        <constraint field="limit::30e6-896a-8419-941b" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="7e34-10e1-69f3-ed25" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="3873-ad9b-45a5-5223" name="Support and Allies" hidden="false">
+      <constraints>
+        <constraint field="limit::30e6-896a-8419-941b" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="b4b0-dc60-6cfd-16ef" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6ec3-66ea-473c-7108" name="Standard" hidden="false">
