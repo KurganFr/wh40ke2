@@ -1,9 +1,7 @@
+# Overview
+This repository is used for the community development of a set of Battlescribe files supporting army list building for Games Workshop's Warhammer 40,000 2nd edition.
 
-
-
-
-
-
+# HTML
 <!DOCTYPE html>
 <html lang="en">
   <head>
