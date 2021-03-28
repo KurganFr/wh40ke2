@@ -391,6 +391,17 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="25.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7353-552d-bdd6-12a3" name="Supercharged Engine" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad4-09bd-9593-e7f9" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3b23-b681-fa93-8463" name="Supercharged Engine" hidden="false" targetId="b2bd-80ec-2d31-4dd1" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="467f-11e9-ea0f-efd7" name="Wargear cards(all races)" hidden="false" collective="false" import="true">
@@ -414,6 +425,11 @@
         <entryLink id="550b-b122-08b4-ab84" name="Force Axe " hidden="false" collective="false" import="true" targetId="007c-a7d6-56d8-41c7" type="selectionEntry"/>
         <entryLink id="a9a6-a497-88f5-b51d" name="Force Rod " hidden="false" collective="false" import="true" targetId="deb9-84fc-8108-8c27" type="selectionEntry"/>
         <entryLink id="3ca9-981e-7ed9-25c2" name="Force Sword" hidden="false" collective="false" import="true" targetId="0d3b-76c8-cf44-67a0" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="96f2-29ae-4044-37bb" name="Vehicle Wargear cards (all races)" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="6ac9-4fa3-7a91-56c8" name="Supercharged Engine" hidden="false" collective="false" import="true" targetId="7353-552d-bdd6-12a3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -585,6 +601,12 @@ return to normal. Combat drugs may not be used with Frenzon.
  
  
 USE ONCE AND DISCARD</description>
+    </rule>
+    <rule id="b2bd-80ec-2d31-4dd1" name="Supercharged Engine" hidden="false">
+      <description>This card may only be taken for vehicles (including bikes and skimmers) but not for Dreadnoughts or other walkers. The vehicle’s engine has been lovingly serviced and tinkered with by the driver, including having it rebored, gas flowed and fitted with a huge supercharger. The supercharger can be used in any movement phase to increase the vehicle’s speeds as shown below. Roll the dice for extra movement each time the supercharger is used. The extra movement rolled doesn’t have to be used unless you roll the maximum (6 and 12 respectively) in which case the additional movement must be used up.
+Slow Speed: No change
+Combat Speed: +D6
+Fast Speed: +2D6</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
