@@ -276,7 +276,7 @@
     </selectionEntry>
     <selectionEntry id="ef1c-99f3-2194-aa98" name="Digital Lasers" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ed-8e3b-5add-19d9" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ed-8e3b-5add-19d9" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8bc-e90f-2ab9-b7bf" type="max"/>
       </constraints>
       <infoLinks>
