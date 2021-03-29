@@ -227,7 +227,7 @@
       </constraints>
       <infoLinks>
         <infoLink id="3e6b-c9bf-e6e8-eef5" name="Aegis Suit " hidden="false" targetId="cfdd-a9ba-3fa3-7a15" type="profile"/>
-        <infoLink id="9636-07bb-77c5-60c0" name="AEGIS SUIT " hidden="false" targetId="4e72-09f7-0854-708a" type="rule"/>
+        <infoLink id="9636-07bb-77c5-60c0" name="Aegis Suit" hidden="false" targetId="4e72-09f7-0854-708a" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="18.0"/>
@@ -393,7 +393,7 @@
     </selectionEntry>
     <selectionEntry id="7353-552d-bdd6-12a3" name="Supercharged Engine" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad4-09bd-9593-e7f9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e459-d7a5-4527-1655" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3b23-b681-fa93-8463" name="Supercharged Engine" hidden="false" targetId="b2bd-80ec-2d31-4dd1" type="rule"/>
@@ -402,9 +402,99 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e3c7-437d-1a0f-30c7" name="Ablative Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4db-cef7-0010-524e" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="5aa1-75ea-e2aa-152b" name="Ablative Armour" hidden="false" targetId="42d1-33a8-5430-1eb8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6293-4ccb-52c0-2087" name="Auto-Launchers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b00c-7613-904f-fcb5" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2582-8ce4-5ee5-bf65" name="Auto-Launchers" hidden="false" targetId="cd2e-f0e7-37a3-310e" type="rule"/>
+        <infoLink id="fcec-93e7-7ed7-58e5" name="Auto-launchers (Frag)" hidden="false" targetId="cf6d-ab9a-8729-8e3c" type="profile"/>
+        <infoLink id="d6a1-7e37-8e62-a53a" name="Auto-launchers (Smoke)" hidden="false" targetId="3e08-2eb5-cdd9-27e3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="503f-3637-eb24-ce07" name="Ceramite Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d5d-6dc4-0101-cf91" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="dcac-7e2f-2c1b-25bd" name="Ceramite Armour" hidden="false" targetId="da7f-bd8f-12ef-2125" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="349c-1e0e-9d36-3c9b" name="Electro-Hull" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f4a-d233-501d-f88c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3623-3de5-c450-7f05" name="Electro-Hull" hidden="false" targetId="cd78-c89a-a14c-804d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8210-7a12-60b4-a205" name="Null-Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af60-206b-64f8-0caf" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="5200-b8c8-d74e-0bad" name="Null-Shield" hidden="false" targetId="e322-faee-1d5e-1731" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b1e-58f2-d278-4230" name="Reinforced Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ced-6e54-9463-3ba6" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="bd60-9137-ebe2-dc2a" name="Reinforced Armour" hidden="false" targetId="e15e-636f-d58e-255e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="87fc-286c-1bea-a256" name="Searchlight" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="904c-0d77-59a7-35e2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ddf0-6919-7bb4-dd5e" name="Searchlight" hidden="false" targetId="8222-f62d-4654-9edd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6cd-0470-80c0-20e2" name="Vortex Detonator" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf9-79cf-b2f1-aadc" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fe05-a2e6-662e-e0d3" name="Vortex Detonator" hidden="false" targetId="39cf-7e23-a3a1-1a40" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="50.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="467f-11e9-ea0f-efd7" name="Wargear cards(all races)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="467f-11e9-ea0f-efd7" name="Wargear cards (all races)" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="6d6a-52be-d412-79bc" name="Aegis Suit " hidden="false" collective="false" import="true" targetId="bf87-09f0-73f6-9b48" type="selectionEntry"/>
         <entryLink id="8628-51b0-47dc-f7d7" name="Armour Piercing Ammo " hidden="false" collective="false" import="true" targetId="5bb7-01d3-0511-2586" type="selectionEntry"/>
@@ -427,19 +517,23 @@
         <entryLink id="3ca9-981e-7ed9-25c2" name="Force Sword" hidden="false" collective="false" import="true" targetId="0d3b-76c8-cf44-67a0" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="96f2-29ae-4044-37bb" name="Vehicle Wargear cards (all races)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="96f2-29ae-4044-37bb" name="Vehicle Cards (all races)" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="6ac9-4fa3-7a91-56c8" name="Supercharged Engine" hidden="false" collective="false" import="true" targetId="7353-552d-bdd6-12a3" type="selectionEntry"/>
+        <entryLink id="3305-1743-ef46-9d94" name="Ablative Armour" hidden="false" collective="false" import="true" targetId="e3c7-437d-1a0f-30c7" type="selectionEntry"/>
+        <entryLink id="a8ca-13ce-dffe-944f" name="Auto-Launchers" hidden="false" collective="false" import="true" targetId="6293-4ccb-52c0-2087" type="selectionEntry"/>
+        <entryLink id="d7b2-be0d-a3a7-de44" name="Ceramite Armour" hidden="false" collective="false" import="true" targetId="503f-3637-eb24-ce07" type="selectionEntry"/>
+        <entryLink id="3534-4470-fd72-62a5" name="Electro-Hull" hidden="false" collective="false" import="true" targetId="349c-1e0e-9d36-3c9b" type="selectionEntry"/>
+        <entryLink id="ff40-4c39-6f51-00c8" name="Null-Shield" hidden="false" collective="false" import="true" targetId="8210-7a12-60b4-a205" type="selectionEntry"/>
+        <entryLink id="19d1-ae22-a61a-56c9" name="Reinforced Armour" hidden="false" collective="false" import="true" targetId="9b1e-58f2-d278-4230" type="selectionEntry"/>
+        <entryLink id="793b-e366-600d-d742" name="Searchlight" hidden="false" collective="false" import="true" targetId="87fc-286c-1bea-a256" type="selectionEntry"/>
+        <entryLink id="9a5a-0b8b-810b-5048" name="Vortex Detonator" hidden="false" collective="false" import="true" targetId="e6cd-0470-80c0-20e2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="4e72-09f7-0854-708a" name="AEGIS SUIT " hidden="false">
-      <description>An aegis suit is a close-fitting mesh of psycho-conductive filaments, which dissipate
-dangerous amounts of psychic energy. It is normally woven into clothing or hard wired into
-armour; hence an aegis suit may be combined with physical armour and / or force fields. A
-model wearing a aegis suit gains a saving throw of 4, 5 or 6 on a D6 against any enemy
-psychic power used against it. </description>
+    <rule id="4e72-09f7-0854-708a" name="Aegis Suit" hidden="false">
+      <description>An aegis suit is a close-fitting mesh of psycho-conductive filaments, which dissipate dangerous amounts of psychic energy. It is normally woven into clothing or hard wired into armour; hence an aegis suit may be combined with physical armour and / or force fields. A model wearing a aegis suit gains a saving throw of 4, 5 or 6 on a D6 against any enemy psychic power used against it. </description>
     </rule>
     <rule id="5c8f-061a-8f8c-240a" name="Boltgun" hidden="false">
       <description>The bolt gun or bolter is the standard armament of Space Marines and the favoured weapon of Orks. It is a short, compact weapon that fires a small missile or bolt considerably er than an ordinary bullet. The bolt contains an armour letting tip. an explosive, and a mass reactive detonator. It is Yot from the barrel under low velocity. its own propellant iting once the missile is clear of the barrel. he explosive detonates only when it has pierced armour. Any den increase in local mass activates the explosive and krws the target apart from the inside. t guns are noisy and their effects are visibly devastating. ective range is not great, and they are thus ideally suited to shock/assault role. </description>
@@ -608,12 +702,44 @@ Slow Speed: No change
 Combat Speed: +D6
 Fast Speed: +2D6</description>
     </rule>
+    <rule id="42d1-33a8-5430-1eb8" name="Ablative Armour" hidden="false">
+      <description>The crew of this vehicle have bolted extra protective plates to it, forming a secondary layer of armour. A vehicle with ablative armour ignores the first hit which successfully penetrates the vehicle&apos;s armour. Further hits that penetrate count as normal. Hits from graviton guns and Shokk Attack guns ignore ablative armour. Exposed crewmen are not protected by ablative armour.
+
+IGNORE FIRST PENETRATING HIT</description>
+    </rule>
+    <rule id="cd2e-f0e7-37a3-310e" name="Auto-Launchers" hidden="false">
+      <description>May be triggered in the shooting phase of the vehicle‘s turn in addition to normal firing. The first grenade in the spread automatically hits a point 6&quot; away in the forward 90 arc. The other two grenades deviate D3&quot; away from the target point of the first grenade. When mounted on a vehicle (including a dreadnought), this weapon may fire twice during the battle.</description>
+    </rule>
+    <rule id="da7f-bd8f-12ef-2125" name="Ceramite Armour" hidden="false">
+      <description>The armour of this vehicle is a special compound that retains all the protection of normal armour, but also has incredible heat resisting qualities. Any shots from MultiMeltas, Meltaguns or Melta-bombs divide their armour penetration rolls in half. Note that exposed crewman are not protected by ceramite armour and will be affected normally.
+
+DIVIDE PENETRATION FOR MELTA-BASED WEAPONS BY HALF</description>
+    </rule>
+    <rule id="cd78-c89a-a14c-804d" name="Electro-Hull" hidden="false">
+      <description>This card may be taken by any vehicles except those with exposed crew. By running a live electric current through the hull, this vehicle has a very simple defense against hand-to-hand attacks. Any model which attacks this vehicle in hand-to-hand combat must first see if their armour protects them from the shock, by successfully making a basic armour saving roll (field saves have no effect against Electro-hulls). If the model fails, then he will be thrown back 1&quot; and may not attack this turn. If the model successfully makes its basic saving throw then it may attack the vehicle as normal.</description>
+    </rule>
+    <rule id="e322-faee-1d5e-1731" name="Null-Shield" hidden="false">
+      <description>Each time a psychic power is used on a vehicle with a null-shield, roll the Scatter Die first — on a roll of a ‘Hit’, the psychic power penetrates the Shield and works normally. If an arrow is rolled, the power is deflected 2D6” away in the direction indicated, passing over terrain and obstacles but affecting the first legal model (other than the vehicle whose Null-Shield deflected it) in its path. If the null-field is within a blast marker, the Shield will nullify the power on a 4+ on D6.</description>
+    </rule>
+    <rule id="e15e-636f-d58e-255e" name="Reinforced Armour" hidden="false">
+      <description>The armour value for all locations is increased by +1.
+
+The extra weight has a negative effect on speed; the vehicle‘s Slow Speed is reduced by 1”, the Combat Speed reduced by 2”, and the Fast Speed reduced by 4”. Dreadnoughts and Walkers have their Movement reduced by 2.
+
+ARMOUR VALUE INCREASED BY +1</description>
+    </rule>
+    <rule id="8222-f62d-4654-9edd" name="Searchlight" hidden="false">
+      <description>You may use the Searchlight during any Movement Phase. Place a 2” blast marker  anywhere within Line of Sight of the vehicle using the Searchlight. Any hidden enemy models at least partially covered by the marker are spotted (if they are in or behind soft cover). Enemy models hidden in or behind hard cover become detected instead.</description>
+    </rule>
+    <rule id="39cf-7e23-a3a1-1a40" name="Vortex Detonator" hidden="false">
+      <description>The Vortex Detonator projects a field over a large area which can detect the tiny warp drives within Vortex grenades and cause them to detonate prematurely. If any model attempts to use a Vortex grenade they will be detected by the Vortex Detonator, and the grenade will automatically explode in the model&apos;s hand. Place the blast marker over the model as if it had hit itself with the Vortex grenade.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="cfdd-a9ba-3fa3-7a15" name="Aegis Suit " hidden="false" typeId="a5cd-8edc-8e19-7e94" typeName="Armour">
       <characteristics>
         <characteristic name="Save Throw" typeId="13b6-56f8-41cf-f81a"/>
-        <characteristic name="Special" typeId="ec2b-7cde-d1b1-b9cb">Sv on 4+ vs Psycic attacks</characteristic>
+        <characteristic name="Special" typeId="ec2b-7cde-d1b1-b9cb">Sv on 4+ vs Psychic attacks</characteristic>
       </characteristics>
     </profile>
     <profile id="c70e-3e04-3c70-3a99" name="Boltgun" publicationId="8167-4242-0f4b-4102" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
@@ -1743,6 +1869,32 @@ Frag 2&quot; Blast</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-1</characteristic>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">D6+4</characteristic>
         <characteristic name="Special" typeId="7a82-d213-668b-916b">cc</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cf6d-ab9a-8729-8e3c" name="Auto-launchers (Frag)" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">6</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">-</characteristic>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8">-</characteristic>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f">-</characteristic>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">3</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-1</characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">D6+3</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">2&quot; Blast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3e08-2eb5-cdd9-27e3" name="Auto-launchers (Smoke)" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">6</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">-</characteristic>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8">-</characteristic>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f">-</characteristic>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">-</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">-</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-</characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">-</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">2&quot; Blast, Blocks LOS</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
