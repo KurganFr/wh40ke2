@@ -492,6 +492,30 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="cd73-f599-2625-2d0f" name="Conversion Field" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b0a-bccf-60f1-d068" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef81-e5d0-7bc0-e41a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="9ee6-8cde-56f1-a56d" name="Conversion Field" hidden="false" targetId="f88d-4734-2c4b-9309" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="99f2-f4c1-beff-6ecb" name="Displacer Field" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac23-ccf9-f682-d49e" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8ef-addb-77c5-8aad" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2440-4ad6-3a0a-2fdd" name="Displacer Field" hidden="false" targetId="20df-6f54-1083-1ff2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="20.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="467f-11e9-ea0f-efd7" name="Wargear cards (all races)" hidden="false" collective="false" import="true">
@@ -508,6 +532,8 @@
         <entryLink id="2673-7373-7940-ca99" name="Master-Crafted Bolt Pistol " hidden="false" collective="false" import="true" targetId="4c78-f7c5-051d-a61d" type="selectionEntry"/>
         <entryLink id="05d7-02cf-15a3-40a4" name="Combat Drugs" hidden="false" collective="false" import="true" targetId="7c86-e3f4-c99c-9350" type="selectionEntry"/>
         <entryLink id="4bd1-2aa0-731a-8645" name="Auxiliary Grenade Launcher " hidden="false" collective="false" import="true" targetId="7102-a3d8-6f6f-34de" type="selectionEntry"/>
+        <entryLink id="aae8-b49b-0917-8377" name="Conversion Field" hidden="false" collective="false" import="true" targetId="cd73-f599-2625-2d0f" type="selectionEntry"/>
+        <entryLink id="8d09-0895-b244-df5d" name="Displacer Field" hidden="false" collective="false" import="true" targetId="99f2-f4c1-beff-6ecb" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="813a-c232-7a4a-950f" name="Psykers Only Wargear cards" hidden="false" collective="false" import="true">
@@ -539,42 +565,26 @@
       <description>The bolt gun or bolter is the standard armament of Space Marines and the favoured weapon of Orks. It is a short, compact weapon that fires a small missile or bolt considerably er than an ordinary bullet. The bolt contains an armour letting tip. an explosive, and a mass reactive detonator. It is Yot from the barrel under low velocity. its own propellant iting once the missile is clear of the barrel. he explosive detonates only when it has pierced armour. Any den increase in local mass activates the explosive and krws the target apart from the inside. t guns are noisy and their effects are visibly devastating. ective range is not great, and they are thus ideally suited to shock/assault role. </description>
     </rule>
     <rule id="7486-44d4-295d-2333" name="Armour Piercing Ammo " hidden="false">
-      <description>Armour piercing ammo is either projectiles with specially hardened tips in the case of 
-projectile weapons or a super-charged power pack in the case of energy weapons. When you
-fire a shot using armour piercing ammo the weapon’s save modifier is increased to -6 for that
-one shot only. Against vehicles the weapon’s armour penetration is increased by an amount,
-which varies according to the Strength of the weapon as shown below. The decision to use
+      <description>Armour piercing ammo is either projectiles with specially hardened tips in the case of projectile weapons or a super-charged power pack in the case of energy weapons. When you fire a shot using armour piercing ammo the weapon’s save modifier is increased to -6 for that one shot only. Against vehicles the weapon’s armour penetration is increased by an amount, which varies according to the Strength of the weapon as shown below. The decision to use
 armour piercing ammo must be made before the dice is rolled to hit. 
-Weapon’s Strength 		1-3 	4-5 		6-7		 8-10
-Bonus Penetration Dice +D3 	+1D6 	+1D12 	+1D20
+Weapon’s Strength: Bonus Penetration Dice
+1-3: +D3
+4-5: +1D6
+6-7: +1D12
+8-10: +1D20
 Use ONCE and discard.</description>
     </rule>
     <rule id="874c-8497-bdd4-d0fc" name="Auxiliary Grenade Launcher " hidden="false">
-      <description>This particular version of the auxiliary grenade launcher is small enough to fit onto any 
-weapon, including hand-to-hand combat weapons, and may be fired in addition to normal
-shooting. The grenade launcher is loaded with either krak or frag grenades (choose which at
-the start of the game). Other grenades may not be loaded during the game. A model carrying
-an auxiliary grenade launcher may choose to shoot a weapon and the grenade launcher in
-the same shooting phase with a -1 to hit modifier on both shots. </description>
+      <description>This particular version of the auxiliary grenade launcher is small enough to fit onto any weapon, including hand-to-hand combat weapons, and may be fired in addition to normal shooting. The grenade launcher is loaded with either krak or frag grenades (choose which at
+the start of the game). Other grenades may not be loaded during the game. A model carrying an auxiliary grenade launcher may choose to shoot a weapon and the grenade launcher in the same shooting phase with a -1 to hit modifier on both shots. </description>
     </rule>
     <rule id="726e-a2c4-d310-5def" name="Bionic Arm " hidden="false">
-      <description>A bionic arm makes for a powerful enhancement of any warrior’s skills, giving them greatly
-amplified strength, reflexes, grip and dexterity. A model fitted with a bionic arm gains +1 to
-their Strength characteristic for the purposes of hand-to-hand combat and throwing grenades.
-The model also gains +1 Initiative in hand-to-hand combat only. 
- 
- 
-Common </description>
+      <description>A bionic arm makes for a powerful enhancement of any warrior’s skills, giving them greatly amplified strength, reflexes, grip and dexterity. A model fitted with a bionic arm gains +1 to their Strength characteristic for the purposes of hand-to-hand combat and throwing grenades. The model also gains +1 Initiative in hand-to-hand combat only.
+
+Common</description>
     </rule>
     <rule id="3db1-2923-e2f2-b8a1" name="Bionic Eye " hidden="false">
-      <description>BIONIC EYE          5 Points 
-A bionic eye is a technological replacement for an eye lost through injury or disease. In many
-ways it is superior to the original, giving sharper vision and an expanded range of visible light
-spectrums, so the subject can see in the dark, detect radiation and so on. A model equipped
-with a bionic eye gains +1 to hit with all shooting, and can detect hidden troops and energy
-emissions from vehicles, psykers etc. within 24”. 
- 
- 
+      <description>A bionic eye is a technological replacement for an eye lost through injury or disease. In many ways it is superior to the original, giving sharper vision and an expanded range of visible light spectrums, so the subject can see in the dark, detect radiation and so on. A model equipped with a bionic eye gains +1 to hit with all shooting, and can detect hidden troops and energy emissions from vehicles, psykers etc. within 24”.
  
 Detect hidden troops within 24” 
 +1 To Hit
@@ -603,97 +613,44 @@ extra attack dice for having them.
 </description>
     </rule>
     <rule id="1998-9cb1-e47c-c273" name="Force Axe" hidden="false">
-      <description>A force axe crackles with barely suppressed sparks of psychic energy. At the end of the
-psychic phase one unused force card may be stored in the force axe instead of being placed
-on the warp cards discard pile. The stored force card may be retrieved from the weapon and
-used in subsequent psychic phases. In hand-to-hand combat the force axe increases the
-wielder’s Strength characteristic by a number equal to their mastery level and wounds
-daemons automatically with no saving throw possible. The wielder may also expend the 
-stored force card to gain an extra +3 Strength and -3 armour save in hand-to-hand combat. 
+      <description>A force axe crackles with barely suppressed sparks of psychic energy. At the end of the psychic phase one unused force card may be stored in the force axe instead of being placed on the warp cards discard pile. The stored force card may be retrieved from the weapon and used in subsequent psychic phases. In hand-to-hand combat the force axe increases the wielder’s Strength characteristic by a number equal to their mastery level and wounds daemons automatically with no saving throw possible. The wielder may also expend the stored force card to gain an extra +3 Strength and -3 armour save in hand-to-hand combat. 
  
-PSYKERS ONLY
-</description>
+PSYKERS ONLY</description>
     </rule>
     <rule id="837a-fc15-7eff-03a0" name="Force Rod " hidden="false">
-      <description>A force rod is prized because it can absorb prodigious amounts of psychic energy into its
-helix-shaped central core. At the end of the psychic phase unused force cards may be stored
-in the force rod instead of being placed on the warp cards discard pile. The rod may store a
-maximum of 3 force cards. Stored force cards may be retrieved from the rod and used in
-subsequent psychic phases. In hand-to-hand combat the force rod increases the wielder’s
-Strength characteristic by a number equal to their mastery level and wounds daemons
-automatically with no saving throw possible. 
-</description>
+      <description>A force rod is prized because it can absorb prodigious amounts of psychic energy into its helix-shaped central core. At the end of the psychic phase unused force cards may be stored in the force rod instead of being placed on the warp cards discard pile. The rod may store a maximum of 3 force cards. Stored force cards may be retrieved from the rod and used in subsequent psychic phases. In hand-to-hand combat the force rod increases the wielder’s Strength characteristic by a number equal to their mastery level and wounds daemons automatically with no saving throw possible. 
+
+PSYKERS ONLY</description>
     </rule>
     <rule id="2160-df99-56f4-cb80" name="Force Sword" hidden="false">
-      <description>Phased crystalline patterns along the force sword’s blade coil iridescent psychic energy
-around it like a snake. At the end of the psychic phase one unused force card may be stored
-in the force sword instead of being placed on the warp card discard pile. The stored force 
-card may be retrieved from the weapon and used in subsequent psychic phases. In hand-tohand
-
-combat the force sword increases the wielder’s Strength characteristic by a number
-equal to their mastery level and wounds daemons automatically with no saving throw
-possible. The wielder may also expend the stored force card to gain an extra +2 Strength and
--2 armour save in hand-to-hand combat. The force sword can be used to parry. 
+      <description>Phased crystalline patterns along the force sword’s blade coil iridescent psychic energy around it like a snake. At the end of the psychic phase one unused force card may be stored in the force sword instead of being placed on the warp card discard pile. The stored force card may be retrieved from the weapon and used in subsequent psychic phases. In hand-to-hand combat the force sword increases the wielder’s Strength characteristic by a number
+equal to their mastery level and wounds daemons automatically with no saving throw possible. The wielder may also expend the stored force card to gain an extra +2 Strength and -2 armour save in hand-to-hand combat. The force sword can be used to parry. 
  
-PSYKERS ONLY
-</description>
+PSYKERS ONLY</description>
     </rule>
     <rule id="6be3-c495-144a-120d" name="Frenzon " hidden="false">
-      <description>Frenzon is a drug that can be used to induce the psychological effects of frenzy or hatred for
-the rest of the game. The psychological effects are automatic and no test is made against
-Leadership. Only one psychological state can be induced at a time. A single dose of frenzon
-antidote (contained in the frenzon dispensing device) will negate the induced psychological
-state. However, repeated use of frenzon is dangerous to the subject. Every time a dose is
-administered after the first roll a D6 for the model affected: on a roll of 1 the model suffers D3
-wounds. 
-</description>
+      <description>Frenzon is a drug that can be used to induce the psychological effects of frenzy or hatred for the rest of the game. The psychological effects are automatic and no test is made against Leadership. Only one psychological state can be induced at a time. A single dose of frenzon antidote (contained in the frenzon dispensing device) will negate the induced psychological state. However, repeated use of frenzon is dangerous to the subject. Every time a dose is administered after the first roll a D6 for the model affected: on a roll of 1 the model suffers D3 wounds.</description>
     </rule>
     <rule id="3c86-86ea-87b3-0308" name="Immune " hidden="false">
-      <description>Immune is a broad-band immunisation which protects the body against bio-warfare attacks, a
-variety of toxins and dangerous levels of radiation. A character equipped with Immune totally
-ignores the effects of the following grenades: choke, hallucinogen, rad, scare, toxin and virus.  
+      <description>Immune is a broad-band immunisation which protects the body against bio-warfare attacks, a variety of toxins and dangerous levels of radiation. A character equipped with Immune totally ignores the effects of the following grenades: choke, hallucinogen, rad, scare, toxin and virus.
 </description>
     </rule>
     <rule id="a85f-bf7b-681d-6363" name="Jump Pack " hidden="false">
-      <description>A jump pack permits its wearer to make a long powered leap instead of its normal move. A
-jump can be made up to a distance of 18&quot;, reaching a height sufficient to clear most 
-obstacles, vehicles and models. Woods and single storey buildings reduce the jump to 12&quot;.
-Roll a scatter dice for the jumping model on landing: a roll of a hit indicates it&apos;s on target; an
-arrow indicates the model scatters D3&quot; in the direction indicated. When a model with a jump
-pack charges they may move up to 4&quot; after they land to engage an opponent in hand-to-hand
-combat. A model may make a jump, land and then shoot or throw a grenade, but it can&apos;t use a
-move or fire weapon. Models using jump packs leap in slow, predictable curves so models
-firing at them do not suffer the normal -1 to hit penalty for firing at a target moving 10&quot; or
-faster.
-</description>
+      <description>A jump pack permits its wearer to make a long powered leap instead of its normal move. A jump can be made up to a distance of 18&quot;, reaching a height sufficient to clear most obstacles, vehicles and models. Woods and single storey buildings reduce the jump to 12&quot;. Roll a scatter dice for the jumping model on landing: a roll of a hit indicates it&apos;s on target; an arrow indicates the model scatters D3&quot; in the direction indicated. When a model with a jump pack charges they may move up to 4&quot; after they land to engage an opponent in hand-to-hand combat. A model may make a jump, land and then shoot or throw a grenade, but it can&apos;t use a move or fire weapon. Models using jump packs leap in slow, predictable curves so models
+firing at them do not suffer the normal -1 to hit penalty for firing at a target moving 10&quot; or faster.</description>
     </rule>
     <rule id="4611-6015-7c90-0298" name="Master-Crafted Bolt Pistol " hidden="false">
-      <description>A weapon crafted by a master armourer and ornamented by the greatest artists is a worthy
-weapon for a warrior. Such pistols are treasured possessions, and are often passed from one
-warrior to another.  </description>
+      <description>A weapon crafted by a master armourer and ornamented by the greatest artists is a worthy weapon for a warrior. Such pistols are treasured possessions, and are often passed from one warrior to another.</description>
     </rule>
     <rule id="5f38-fb06-7764-55bb" name="Cameleoline" hidden="false">
-      <description>Cameleoline is a rare artificial substance, which can be woven onto the structure of most
-fabrics. Morphic polymer chains in the material automatically take on the colours and textures
-of their surroundings. The result is that after a second or two motionless the wearer appears
-to fade into the background, offering chameleon-like protection from prying eyes. All shots
-fired at a stationary model wearing Cameleoline suffer a -1 to modifier in addition to the
-normal to hit modifiers for cover etc. If the model hides, troops that move into position to see
-the hiding model, or move within their initiative distance, will only detect them rather than
-spotting them. 
+      <description>Cameleoline is a rare artificial substance, which can be woven onto the structure of most fabrics. Morphic polymer chains in the material automatically take on the colours and textures of their surroundings. The result is that after a second or two motionless the wearer appears to fade into the background, offering chameleon-like protection from prying eyes. All shots fired at a stationary model wearing Cameleoline suffer a -1 to modifier in addition to the
+normal to hit modifiers for cover etc. If the model hides, troops that move into position to see the hiding model, or move within their initiative distance, will only detect them rather than spotting them. 
+
 Common </description>
     </rule>
     <rule id="eee3-aebe-be7f-7bed" name="Combat Drugs" hidden="false">
-      <description>Frenzon is the best known and cheapest combat drug but there are others – Stim, Gamma
-Æ, Rage and Satrophine. A character equipped with combat drugs may use them at any time
-with immediate effects on their characteristics. The character speeds up (Mx2, Ix2, Ax2) and
-becomes harder to injure (T+1) and stronger (S+1). At the end of each of the character’s
-turns roll a D6, on a roll of 5 or 6 the character suffers 1 wound with no armour save possible
-as the drugs ravage their system. The effects of the drugs last until the character suffers a
-wound for any reason at which point this card is discarded and the model’s characteristics
-return to normal. Combat drugs may not be used with Frenzon. 
- 
- 
+      <description>Frenzon is the best known and cheapest combat drug but there are others – Stim, Gamma Æ, Rage and Satrophine. A character equipped with combat drugs may use them at any time with immediate effects on their characteristics. The character speeds up (Mx2, Ix2, Ax2) and becomes harder to injure (T+1) and stronger (S+1). At the end of each of the character’s turns roll a D6, on a roll of 5 or 6 the character suffers 1 wound with no armour save possible as the drugs ravage their system. The effects of the drugs last until the character suffers a wound for any reason at which point this card is discarded and the model’s characteristics return to normal. Combat drugs may not be used with Frenzon. 
+  
 USE ONCE AND DISCARD</description>
     </rule>
     <rule id="b2bd-80ec-2d31-4dd1" name="Supercharged Engine" hidden="false">
@@ -733,6 +690,17 @@ ARMOUR VALUE INCREASED BY +1</description>
     </rule>
     <rule id="39cf-7e23-a3a1-1a40" name="Vortex Detonator" hidden="false">
       <description>The Vortex Detonator projects a field over a large area which can detect the tiny warp drives within Vortex grenades and cause them to detonate prematurely. If any model attempts to use a Vortex grenade they will be detected by the Vortex Detonator, and the grenade will automatically explode in the model&apos;s hand. Place the blast marker over the model as if it had hit itself with the Vortex grenade.</description>
+    </rule>
+    <rule id="f88d-4734-2c4b-9309" name="Conversion Field" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>A conversion field converts incoming energy into light, giving the bearer an additional saving throw of 4, 5 or 6 on a D6. This extra save is taken before an armour save and is not subject to saving throw modifiers so it always succeeds on a 4, 5 or 6. A successful save causes a blinding flash of light that illuminates an area with a radius equal to the Strength of the attacker or weapon in inches. Any models within this area that have no eye protection will be blinded on a roll of 4, 5 or 6 on a D6 until the beginning of their next turn. models that are blind cannot move or shoot and fight in hand-to-hand combat with a WS of 1.
+
+4, 5 or 6 Unmodified save
+Blinds unprotected troops on 4, 5 of 6.</description>
+    </rule>
+    <rule id="20df-6f54-1083-1ff2" name="Displacer Field" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>A displacer field is in fact a miniature warp-drive mechanism with a proximity detector which activates the warp-drive when it picks up incoming shots, psychic attacks or close combat blows. The displacer field is very reliable, activating on a roll of 3 or more on a D6 whenever the wearer is hit. The field instantly shifts the wearer D6&quot; in a direction determined by rolling the scatter dice. This will cause the attacks which struck the character to miss unless the attack uses a tempiale or blast marker and the field fails to get him out of the area of effect. A displacer field will not work against a Vortex grenade 
+
+3+ Unmodified save, move D6&quot; in a random direction</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1151,55 +1119,54 @@ ARMOUR VALUE INCREASED BY +1</description>
     </profile>
     <profile id="9742-613a-bc0b-e786" name="Banshee Mask" publicationId="8167-4242-0f4b-4102" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
       <characteristics>
-        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC only</characteristic>
-        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC only</characteristic>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC</characteristic>
         <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
         <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
         <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b">Enemy Rolls no attack dice in first round of charge</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat, Enemy rolls no attack dice in first round of charge</characteristic>
       </characteristics>
     </profile>
-    <profile id="2f73-3a95-e819-ad14" name="Blades and Swords" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+    <profile id="2f73-3a95-e819-ad14" name="Blades and Saws" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
       <characteristics>
-        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC only</characteristic>
-        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC only</characteristic>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC</characteristic>
         <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
         <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
         <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">As user</characteristic>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">As user</characteristic>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">S+D6</characteristic>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close Combat</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat</characteristic>
       </characteristics>
     </profile>
     <profile id="9dac-5dba-538e-aaa2" name="Boneswords" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
       <characteristics>
-        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC only</characteristic>
-        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC only</characteristic>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC</characteristic>
         <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
         <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
         <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">6</characteristic>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-3</characteristic>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">D6+D12+6</characteristic>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close Combat
-User may Parry</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat, User may Parry</characteristic>
       </characteristics>
     </profile>
     <profile id="14da-7f58-6ad9-7783" name="Chainfist" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
       <characteristics>
-        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC only</characteristic>
-        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC only</characteristic>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC</characteristic>
         <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
         <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
         <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">10</characteristic>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a">D4</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-6</characteristic>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">D20+D4+D6+10</characteristic>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close Combat</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat</characteristic>
       </characteristics>
     </profile>
     <profile id="1f02-a797-3fa4-a587" name="Chainsword" publicationId="8167-4242-0f4b-4102" page="7" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
@@ -1212,48 +1179,53 @@ User may Parry</characteristic>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-1</characteristic>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">2D6+4</characteristic>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b">close combat, parry</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat, Parry</characteristic>
       </characteristics>
     </profile>
     <profile id="5812-e4ab-aa74-1e7b" name="Crozius Arcanum" publicationId="8167-4242-0f4b-4102" page="8" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
       <characteristics>
-        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f"/>
-        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC</characteristic>
         <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
         <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
         <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">5</characteristic>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a">D3</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-3</characteristic>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">-</characteristic>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b">can&apos;t be used to parry</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat, Cannot be used to parry</characteristic>
       </characteristics>
     </profile>
-    <profile id="8683-0d59-fbd2-ad8e" name="Harlequins kiss*" publicationId="8167-4242-0f4b-4102" page="8" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
-      <comment>cf codex eldar?</comment>
+    <profile id="8683-0d59-fbd2-ad8e" name="Harlequin&apos;s Kiss" publicationId="8167-4242-0f4b-4102" page="10" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <comment>Updated from Codex: Eldar</comment>
       <characteristics>
-        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f"/>
-        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC</characteristic>
         <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
         <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
         <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
-        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">Special</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat
+Special Rules: Determine hand-to-hand combat hits as normal. If a hit is scored the target makes an immediate armour saving throw. If the save is passed the target is unharmed, and the wire fails to penetrate the armour. If the save is failed the model is automatically killed. The Harlequin&apos;s Kiss may be used against armoured targets such as dreadnoughts and vehicles, but it cannot cause damage unless it is able to penetrate the armour protecting the crew. The Harlequin&apos;s Kiss has its own special rules for penetrating armour. To determine how many points of armour are penetrated roll a D6. If the score is 1 to 5 then that is the amount of armour penetrated, but if the score is 6 then roll another D6 and add this score to the first. If this second dice roll is also a 6 add the score of a furtherD6, and so on until a number of less than 6 is rolled. The chances are that the Kiss won&apos;t penetrate even the most weakly protected vehicle (as most vehicles have at least 8 points of armour) but if the player is very lucky a small chink may be found which allows the wire to wreak devastation inside. If the target is penetrated roll a D6 and refer to the chart below.
+1 One randomly determined crewman is caught and killed by the wire.
+2-4 Roll a D6 for each crewman. On a score of 1, 2 or 3 the individual is unaffected. On the score of a 4, 5 or 6 the crewman is killed.
+5 Roll a D6 for each crewman. On a score of 1 the individual is unaffected. On the score of a 2 or more the crewman is killed.
+6 All crew are killed.</characteristic>
       </characteristics>
     </profile>
     <profile id="4add-cbbc-28d2-fca4" name="Lightning Claws*" publicationId="8167-4242-0f4b-4102" page="9" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
       <comment>special rules</comment>
       <characteristics>
-        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f"/>
-        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">CC</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">CC</characteristic>
         <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
         <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
         <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">8</characteristic>
         <characteristic name="Damage" typeId="9916-b170-c188-a52a">D3</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-5</characteristic>
-        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">special</characteristic>
-        <characteristic name="Special" typeId="7a82-d213-668b-916b">close combat, special rules vs vehicles, parry </characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">Special</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat, Special rules vs vehicles, Parry</characteristic>
       </characteristics>
     </profile>
     <profile id="1cc0-a8c8-9551-477a" name="Mandiblaster" publicationId="8167-4242-0f4b-4102" page="9" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
@@ -1895,6 +1867,18 @@ Frag 2&quot; Blast</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-</characteristic>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">-</characteristic>
         <characteristic name="Special" typeId="7a82-d213-668b-916b">2&quot; Blast, Blocks LOS</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c05a-7ffe-d2a9-5190" name="Conversion Field" hidden="false" typeId="a5cd-8edc-8e19-7e94" typeName="Armour">
+      <characteristics>
+        <characteristic name="Save Throw" typeId="13b6-56f8-41cf-f81a">4, 5 or 6 Unmodified save</characteristic>
+        <characteristic name="Special" typeId="ec2b-7cde-d1b1-b9cb">Blinds unprotected troops on 4, 5 of 6.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="68cb-64be-ca0f-affe" name="Displacer Field" hidden="false" typeId="a5cd-8edc-8e19-7e94" typeName="Armour">
+      <characteristics>
+        <characteristic name="Save Throw" typeId="13b6-56f8-41cf-f81a">3+ Unmodified save</characteristic>
+        <characteristic name="Special" typeId="ec2b-7cde-d1b1-b9cb">Move D6&quot; in a random direction</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
