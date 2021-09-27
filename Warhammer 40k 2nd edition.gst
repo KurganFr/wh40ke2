@@ -3,6 +3,8 @@
   <publications>
     <publication id="919e-afdc-8ed0-7a07" name="Rulebook"/>
     <publication id="8167-4242-0f4b-4102" name="Wargear"/>
+    <publication id="6f74-7607-b707-3103" name="Codex Angels of Death" shortName="CoAoD"/>
+    <publication id="59b5-24e1-c498-df3f" name="White Dwarf"/>
   </publications>
   <costTypes>
     <costType id="30e6-896a-8419-941b" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -251,6 +253,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ddde-64c0-75d7-d118" name="Bionic Arm " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0bc-482b-0d67-fcac" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="817d-eb06-2659-7234" name="Bionic Arm " hidden="false" targetId="726e-a2c4-d310-5def" type="rule"/>
       </infoLinks>
@@ -259,6 +264,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a0c0-b488-4c18-2899" name="Bionic Eye " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d7b-8856-1544-e5be" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="ae8d-9122-4cb0-4537" name="Bionic Eye " hidden="false" targetId="3db1-2923-e2f2-b8a1" type="rule"/>
       </infoLinks>
@@ -267,6 +275,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9f3a-7155-55ef-03af" name="Bionic Leg " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf3-cde3-8628-fa35" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="fad5-dc04-e50f-3eba" name="Bionic Leg " hidden="false" targetId="e841-9c43-1270-86f7" type="rule"/>
       </infoLinks>
@@ -359,6 +370,7 @@
     <selectionEntry id="4c78-f7c5-051d-a61d" name="Master-Crafted Bolt Pistol " hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a09-020b-b9d6-6f31" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab9-6c7b-14a8-2198" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="1dd2-fa91-91fa-bdc6" name="Master-Crafted Bolt Pistol " hidden="false" targetId="4611-6015-7c90-0298" type="rule"/>
@@ -404,7 +416,7 @@
     </selectionEntry>
     <selectionEntry id="e3c7-437d-1a0f-30c7" name="Ablative Armour" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4db-cef7-0010-524e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5441-cc89-fa40-e9b1" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5aa1-75ea-e2aa-152b" name="Ablative Armour" hidden="false" targetId="42d1-33a8-5430-1eb8" type="rule"/>
@@ -483,7 +495,7 @@
     </selectionEntry>
     <selectionEntry id="e6cd-0470-80c0-20e2" name="Vortex Detonator" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf9-79cf-b2f1-aadc" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a632-8934-373c-c36c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="fe05-a2e6-662e-e0d3" name="Vortex Detonator" hidden="false" targetId="39cf-7e23-a3a1-1a40" type="rule"/>
@@ -516,6 +528,207 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="20.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="44f5-711b-6f24-d2de" name="Master-Crafted Plasma Pistol" publicationId="6f74-7607-b707-3103" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6035-37f3-4fd6-8221" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e17-45e8-322d-cfac" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3d6d-3b58-c32b-c45d" name="Master-Crafted Plasma Pistol" hidden="false" targetId="b359-4170-7c41-1ab0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec34-af48-884a-9da3" name="Medi-Pack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="63b4-b22f-2379-f410" name="Medi-Pack" hidden="false" targetId="0e90-e44a-9bcf-2f28" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1411-3286-9ede-ff14" name="Psychic Hood" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e007-cab6-e67f-95e2" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="254f-3649-0649-ebf9" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="61be-fc03-3c1b-2536" name="Psychic Hood" hidden="false" targetId="58dc-6fdd-95bb-72cf" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4aca-3fc8-ae67-0537" name="Scanner" publicationId="8167-4242-0f4b-4102" page="73" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb38-fdc2-fc77-e8f4" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="46f9-26ef-14e4-50cb" name="Scanner" page="" hidden="false" targetId="9b19-4166-c53e-ee7f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86d5-7926-2a78-9df6" name="Seeking Ammo" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfd8-b23d-357a-b588" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7ec4-bca7-da60-b07b" name="Seeking Ammo" hidden="false" targetId="e9d9-bda8-3886-b1cd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e8ac-837b-9f5c-12e9" name="Targeter" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81c8-2860-423c-a766" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="e317-ebf2-1c60-809c" name="Targeter" hidden="false" targetId="faae-f0ba-ecdd-f779" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2609-b2d3-4bc2-e1fe" name="Teleport Jammer" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a84-2ca0-8982-3913" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c9c-1e24-6032-6f0b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8f8f-15c6-c1b7-2d00" name="Teleport Jammer" hidden="false" targetId="ea8d-b822-684f-6671" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae6d-fa79-46ff-c4fc" name="Warp Jump" publicationId="8167-4242-0f4b-4102" page="77" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a13-3ce6-8d70-9833" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecf1-213f-4ebe-7cc2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8a50-7068-505e-3274" name="Warp Jump" hidden="false" targetId="d85d-c3ad-20d0-72c4" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6dfb-74fe-a6f4-aea3" name="Teleport Homer" publicationId="8167-4242-0f4b-4102" page="77" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fda3-ed7c-5d9a-d943" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="dee2-5bc6-c0f8-5c69" name="Teleport Homer" hidden="false" targetId="b927-597d-86cd-ddeb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d59-8e7b-508e-16ca" name="Power Field" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70bb-4d51-3981-02cb" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ba2f-c391-bb38-6c2d" name="Power Field" hidden="false" targetId="2500-353a-2d2f-14bc" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5c1-465c-45be-c8a7" name="Refractor Field" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e53b-8430-7067-2076" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0806-a9d6-952a-df59" name="Refractor Field" hidden="false" targetId="7b3a-f34f-1ce7-4477" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2ed-df66-87e7-fd54" name="Haywire Grenade" publicationId="8167-4242-0f4b-4102" page="74" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="267c-3a8b-6a22-80ed" name="Haywire Grenade" hidden="false" targetId="0a78-4a78-a98a-68d4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc01-d069-29cb-f143" name="Virus Grenade" publicationId="8167-4242-0f4b-4102" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f72-40c9-cf1f-ef48" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59c1-2ab9-fcd2-412b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7ee5-5839-0a72-deaa" name="Virus Grenade" hidden="false" targetId="a09c-0eb9-c639-9848" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e439-2666-86d0-de8c" name="Stasis Grenade" publicationId="8167-4242-0f4b-4102" page="74" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8706-c429-8941-ec2b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d07c-46d5-0cd0-94ef" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="cc10-f59d-38b2-ca46" name="Stasis Grenade" hidden="false" targetId="4976-825d-f2eb-c472" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8984-20b0-7906-7c1f" name="Toxin Grenade" publicationId="8167-4242-0f4b-4102" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a43-dd2e-02d6-424d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="393a-b9df-6306-b648" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="99b4-4dba-456b-6a85" name="Toxin Grenade" hidden="false" targetId="25ee-a1bf-e400-8ded" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f185-647f-5997-6ddc" name="Scythes" publicationId="59b5-24e1-c498-df3f" page="Issue 207" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cac-3be9-6807-33cf" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4413-c07d-2fee-6205" name="Scythes" hidden="false" targetId="6f1e-2d45-be36-3489" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7cb5-c78f-272b-fecd" name="Vortex Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b03-3f1b-0258-a4af" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4e-1d65-53e3-f73b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7cb7-9514-21ce-03d2" name="Vortex Grenade" hidden="false" targetId="e606-7cf3-05f2-4c41" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="04a2-f62a-8093-9fb1" name="Rad Grenade" publicationId="8167-4242-0f4b-4102" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1b5-19bc-c723-d620" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e98-390d-f7ba-b431" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="33a7-63ec-7d4e-fba2" name="Rad grenades*" hidden="false" targetId="2c31-d407-1662-a01e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="25.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="467f-11e9-ea0f-efd7" name="Wargear cards (all races)" hidden="false" collective="false" import="true">
@@ -525,7 +738,7 @@
         <entryLink id="871c-c00d-322b-5954" name="Bionic Arm " hidden="false" collective="false" import="true" targetId="ddde-64c0-75d7-d118" type="selectionEntry"/>
         <entryLink id="24fc-926a-f5db-5d30" name="Bionic Eye " hidden="false" collective="false" import="true" targetId="a0c0-b488-4c18-2899" type="selectionEntry"/>
         <entryLink id="d235-364f-c007-69f6" name="Bionic Leg " hidden="false" collective="false" import="true" targetId="9f3a-7155-55ef-03af" type="selectionEntry"/>
-        <entryLink id="7e8a-578f-49bd-37ca" name="Digital Lazers" hidden="false" collective="false" import="true" targetId="ef1c-99f3-2194-aa98" type="selectionEntry"/>
+        <entryLink id="7e8a-578f-49bd-37ca" name="Digital Lasers" hidden="false" collective="false" import="true" targetId="ef1c-99f3-2194-aa98" type="selectionEntry"/>
         <entryLink id="f564-0d9a-dbf9-a2a2" name="Frenzon " hidden="false" collective="false" import="true" targetId="8686-bb5a-f33d-d33d" type="selectionEntry"/>
         <entryLink id="f592-f8ea-00c5-510f" name="Immune " hidden="false" collective="false" import="true" targetId="7335-f1c6-59ff-a3aa" type="selectionEntry"/>
         <entryLink id="7d76-7f5b-d01f-4465" name="Jump Pack " hidden="false" collective="false" import="true" targetId="5a11-cabb-7879-a2e6" type="selectionEntry"/>
@@ -534,6 +747,23 @@
         <entryLink id="4bd1-2aa0-731a-8645" name="Auxiliary Grenade Launcher " hidden="false" collective="false" import="true" targetId="7102-a3d8-6f6f-34de" type="selectionEntry"/>
         <entryLink id="aae8-b49b-0917-8377" name="Conversion Field" hidden="false" collective="false" import="true" targetId="cd73-f599-2625-2d0f" type="selectionEntry"/>
         <entryLink id="8d09-0895-b244-df5d" name="Displacer Field" hidden="false" collective="false" import="true" targetId="99f2-f4c1-beff-6ecb" type="selectionEntry"/>
+        <entryLink id="f733-bdb9-fba6-9d2f" name="Cameleoline" hidden="false" collective="false" import="true" targetId="cc1f-d62a-7769-0db5" type="selectionEntry"/>
+        <entryLink id="cea2-41ad-e284-757e" name="Power Field" hidden="false" collective="false" import="true" targetId="0d59-8e7b-508e-16ca" type="selectionEntry"/>
+        <entryLink id="f8e1-7d16-5c82-4c52" name="Refractor Field" hidden="false" collective="false" import="true" targetId="e5c1-465c-45be-c8a7" type="selectionEntry"/>
+        <entryLink id="d64c-72b3-9697-2314" name="Haywire Grenade" hidden="false" collective="false" import="true" targetId="f2ed-df66-87e7-fd54" type="selectionEntry"/>
+        <entryLink id="6b49-8ba2-3e60-e073" name="Rad Grenade" hidden="false" collective="false" import="true" targetId="04a2-f62a-8093-9fb1" type="selectionEntry"/>
+        <entryLink id="79c4-645c-877a-2df4" name="Stasis Grenade" hidden="false" collective="false" import="true" targetId="e439-2666-86d0-de8c" type="selectionEntry"/>
+        <entryLink id="97cc-7abd-4b22-1782" name="Toxin Grenade" hidden="false" collective="false" import="true" targetId="8984-20b0-7906-7c1f" type="selectionEntry"/>
+        <entryLink id="e269-ef52-643a-b6af" name="Virus Grenade" hidden="false" collective="false" import="true" targetId="fc01-d069-29cb-f143" type="selectionEntry"/>
+        <entryLink id="5773-9727-1c2e-4176" name="Vortex Grenade" hidden="false" collective="false" import="true" targetId="7cb5-c78f-272b-fecd" type="selectionEntry"/>
+        <entryLink id="21d8-d4d1-bc82-a9bf" name="Master-Crafted Plasma Pistol" hidden="false" collective="false" import="true" targetId="44f5-711b-6f24-d2de" type="selectionEntry"/>
+        <entryLink id="8af7-e58a-16c3-206e" name="Medi-Pack" hidden="false" collective="false" import="true" targetId="ec34-af48-884a-9da3" type="selectionEntry"/>
+        <entryLink id="b76d-7ef5-dca2-52d1" name="Scanner" hidden="false" collective="false" import="true" targetId="4aca-3fc8-ae67-0537" type="selectionEntry"/>
+        <entryLink id="6dca-7a2c-dce7-ab9f" name="Seeking Ammo" hidden="false" collective="false" import="true" targetId="86d5-7926-2a78-9df6" type="selectionEntry"/>
+        <entryLink id="9d6b-a717-2043-16df" name="Targeter" hidden="false" collective="false" import="true" targetId="e8ac-837b-9f5c-12e9" type="selectionEntry"/>
+        <entryLink id="cd9b-4700-cd12-35ad" name="Teleport Homer" hidden="false" collective="false" import="true" targetId="6dfb-74fe-a6f4-aea3" type="selectionEntry"/>
+        <entryLink id="3258-4fcd-9bd5-bd72" name="Teleport Jammer" hidden="false" collective="false" import="true" targetId="2609-b2d3-4bc2-e1fe" type="selectionEntry"/>
+        <entryLink id="7017-b683-a60b-5e96" name="Warp Jump" hidden="false" collective="false" import="true" targetId="ae6d-fa79-46ff-c4fc" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="813a-c232-7a4a-950f" name="Psykers Only Wargear cards" hidden="false" collective="false" import="true">
@@ -541,9 +771,13 @@
         <entryLink id="550b-b122-08b4-ab84" name="Force Axe " hidden="false" collective="false" import="true" targetId="007c-a7d6-56d8-41c7" type="selectionEntry"/>
         <entryLink id="a9a6-a497-88f5-b51d" name="Force Rod " hidden="false" collective="false" import="true" targetId="deb9-84fc-8108-8c27" type="selectionEntry"/>
         <entryLink id="3ca9-981e-7ed9-25c2" name="Force Sword" hidden="false" collective="false" import="true" targetId="0d3b-76c8-cf44-67a0" type="selectionEntry"/>
+        <entryLink id="2a95-cfa4-024a-a210" name="Psychic Hood" hidden="false" collective="false" import="true" targetId="1411-3286-9ede-ff14" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="96f2-29ae-4044-37bb" name="Vehicle Cards (all races)" hidden="false" collective="false" import="true">
+      <infoLinks>
+        <infoLink id="a885-17de-d818-4bba" name="Scythes" hidden="false" targetId="6f1e-2d45-be36-3489" type="rule"/>
+      </infoLinks>
       <entryLinks>
         <entryLink id="6ac9-4fa3-7a91-56c8" name="Supercharged Engine" hidden="false" collective="false" import="true" targetId="7353-552d-bdd6-12a3" type="selectionEntry"/>
         <entryLink id="3305-1743-ef46-9d94" name="Ablative Armour" hidden="false" collective="false" import="true" targetId="e3c7-437d-1a0f-30c7" type="selectionEntry"/>
@@ -701,6 +935,45 @@ Blinds unprotected troops on 4, 5 of 6.</description>
       <description>A displacer field is in fact a miniature warp-drive mechanism with a proximity detector which activates the warp-drive when it picks up incoming shots, psychic attacks or close combat blows. The displacer field is very reliable, activating on a roll of 3 or more on a D6 whenever the wearer is hit. The field instantly shifts the wearer D6&quot; in a direction determined by rolling the scatter dice. This will cause the attacks which struck the character to miss unless the attack uses a tempiale or blast marker and the field fails to get him out of the area of effect. A displacer field will not work against a Vortex grenade 
 
 3+ Unmodified save, move D6&quot; in a random direction</description>
+    </rule>
+    <rule id="0e90-e44a-9bcf-2f28" name="Medi-Pack" publicationId="8167-4242-0f4b-4102" page="72" hidden="false">
+      <description>A model with medi-pack may move into base-to-base-contact with a model that has been reduced to 0 W in this round or which has lost one or more wounds. While healing, the model with medi-pack may neither shoot nor fight. Wounded models will have 1 wound restored. Models which have been reduced to 0 wounds in this turn will be restored to 1 wound on a roll of 5+ (roll after close combat phase has ended). On a roll of 3-4, the model is removed from play but does not count as having been killed. On a roll of 1-2 the model is removed and counts as having been killed.  Medi-packs can also be used to negate any effects of gas or blind grenades as well as psychological effects like terror.</description>
+    </rule>
+    <rule id="58dc-6fdd-95bb-72cf" name="Psychic Hood" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>Reroll nullify</description>
+    </rule>
+    <rule id="9b19-4166-c53e-ee7f" name="Scanner" publicationId="8167-4242-0f4b-4102" page="73" hidden="false">
+      <description>Detect hidden troops within 24&quot;</description>
+    </rule>
+    <rule id="e9d9-bda8-3886-b1cd" name="Seeking Ammo" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>Ignores cover and always hits on 2+. ONE USE ONLY. Can only be used in projectile weapons. Can fire at targets in weapon range with no LOS needed, but cannot fire at hidden, undetected troops.</description>
+    </rule>
+    <rule id="faae-f0ba-ecdd-f779" name="Targeter" publicationId="8167-4242-0f4b-4102" page="77" hidden="false">
+      <description>+1 to hit modifier for the weapon it&apos;s attached to</description>
+    </rule>
+    <rule id="ea8d-b822-684f-6671" name="Teleport Jammer" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>May force troops within 36&quot; to re-roll scatter die when teleporting in (other than psychic teleportations). On a roll of a double 1 or double 2 for scattering distance, the teleporting troops are destroyed.</description>
+    </rule>
+    <rule id="d85d-c3ad-20d0-72c4" name="Warp Jump" publicationId="8167-4242-0f4b-4102" page="77" hidden="false">
+      <description>Portable teleporting device. Model may teleport to any point instead of moving. Will scatter 2D10&quot;. On a roll of 2 the model is removed from play and counts as destroyed.</description>
+    </rule>
+    <rule id="b927-597d-86cd-ddeb" name="Teleport Homer" publicationId="8167-4242-0f4b-4102" page="77" hidden="false">
+      <description>Troops teleporting in within 6&quot; of the homer do not scatter on a roll of &quot;hit&quot; on the scatter die.</description>
+    </rule>
+    <rule id="2500-353a-2d2f-14bc" name="Power Field" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>2+ unmodifiable Sv against ranged attacks (no hth), encumbers wearer (-1 in hth)</description>
+    </rule>
+    <rule id="7b3a-f34f-1ce7-4477" name="Refractor Field" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>unmodifiable, additional Sv of 5+, always happens before regular Sv. Wearer may not hide when field is switched on.</description>
+    </rule>
+    <rule id="6f1e-2d45-be36-3489" name="Scythes" publicationId="59b5-24e1-c498-df3f" page="Issue 207" hidden="false">
+      <description>BIKES ONLY. On hit-and-run-attack: Target must roll 1D6 under I-value. If failed, target takes one hit of S4 and SvM -1, causing 1 wound.  Else and if target survives, work out hit-and-run-attack as usual.</description>
+    </rule>
+    <rule id="3170-51f7-e7c6-540e" name="General" publicationId="919e-afdc-8ed0-7a07" hidden="false">
+      <description>any model within 12 &quot; of the general may use his leadership for break or panic tests</description>
+    </rule>
+    <rule id="bbb4-09e3-51e8-a126" name="Flak vest" publicationId="919e-afdc-8ed0-7a07" hidden="false">
+      <description>Sv 6+, SvM +1 against template weapons</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1879,6 +2152,84 @@ Frag 2&quot; Blast</characteristic>
       <characteristics>
         <characteristic name="Save Throw" typeId="13b6-56f8-41cf-f81a">3+ Unmodified save</characteristic>
         <characteristic name="Special" typeId="ec2b-7cde-d1b1-b9cb">Move D6&quot; in a random direction</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b359-4170-7c41-1ab0" name="Master-Crafted Plasma Pistol" publicationId="6f74-7607-b707-3103" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">0-8</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">8-24</characteristic>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8">+2</characteristic>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f">-1</characteristic>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">6</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-1</characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">D6+6</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b"> Sustained Fire 1D,  </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0a78-4a78-a98a-68d4" name="Haywire Grenade" publicationId="8167-4242-0f4b-4102" page="74" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">User S+2</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">3</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">automatic</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">affects only vehicles, robots, dreadnoughts (walkers) and terminators/exo armour. 1 1/2&quot; radius template. Roll on hit location damage and modify by -1. Terminators and crewmen suffer 1 S3 wound with no Sv allowed. DISCARD AFTER USE.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a09c-0eb9-c639-9848" name="Virus Grenade" publicationId="8167-4242-0f4b-4102" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">User S+2</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">2&quot; blast radius. Kills troops without sealed armour automatically on a roll of 3+. Unsealed models within D6&quot; of a model killed by a virus grenade will die on a 4+. Repeat process until there&apos;s no more models within D6&quot; of each model killed by grenade or virus effects. DISCARD AFTER USE</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4976-825d-f2eb-c472" name="Stasis Grenade" publicationId="8167-4242-0f4b-4102" page="74" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">User S+2</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">2&quot;  blast template. REMAINS IN PLAY. Everything within may neither move nor shoot or be shot at. Models within 2&quot; of the template&apos;s edge may move at half speed, shoot and use psychic powers on a roll of 4+. CC within 2&quot; of the edge is fought every other turn. -2 to hit for everything in the area 2&quot; from the template edge. Each turn, roll on stasis table (wargear book, page 74). ONE USE ONLY</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="25ee-a1bf-e400-8ded" name="Toxin Grenade" publicationId="8167-4242-0f4b-4102" page="75" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">User S+2</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">1 1/2&quot; blast marker. REMAINS IN PLAY. Unprotected models within die on a roll of 2+. Protected groups (cf wargear pg 75) are killed on a 3+, sealed models (power armour etc)  and models in enclosed vehicles.; pure tyranids (not hybrids and genestealers) are not affected.  Roll for cloud movement on wargear, pg 75. ONE USE ONLY.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e606-7cf3-05f2-4c41" name="Vortex Grenade" publicationId="8167-4242-0f4b-4102" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">User S+2</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">1 1/2&quot; blast template. REMAINS IN PLAY. Anything covered or touched by the template is destroyed on a roll of a 4+ with no armour save allowed. At the beginning of each side&apos;s turn, the cloud will on a roll of: 1-2 vanish 3-4 remain in play 5-6 scatter D6&quot; in a random direction</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
