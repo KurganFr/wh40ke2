@@ -729,6 +729,18 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="25.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e215-5b57-50b1-f97d" name="Flak Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="302d-cbe8-057a-2530" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="9f61-aca1-75d6-8755" name="Flak Armour" hidden="false" targetId="7347-a6ca-9197-eaff" type="profile"/>
+        <infoLink id="4c44-7176-fccb-a4ac" name="Flak vest" hidden="false" targetId="bbb4-09e3-51e8-a126" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="467f-11e9-ea0f-efd7" name="Wargear cards (all races)" hidden="false" collective="false" import="true">
@@ -970,10 +982,13 @@ Blinds unprotected troops on 4, 5 of 6.</description>
       <description>BIKES ONLY. On hit-and-run-attack: Target must roll 1D6 under I-value. If failed, target takes one hit of S4 and SvM -1, causing 1 wound.  Else and if target survives, work out hit-and-run-attack as usual.</description>
     </rule>
     <rule id="3170-51f7-e7c6-540e" name="General" publicationId="919e-afdc-8ed0-7a07" hidden="false">
-      <description>any model within 12 &quot; of the general may use his leadership for break or panic tests</description>
+      <description>Any model within 12 &quot; of the general may use his leadership for break or panic tests</description>
     </rule>
     <rule id="bbb4-09e3-51e8-a126" name="Flak vest" publicationId="919e-afdc-8ed0-7a07" hidden="false">
       <description>Sv 6+, SvM +1 against template weapons</description>
+    </rule>
+    <rule id="1671-f4ec-bfea-3693" name="Battle Standard" publicationId="919e-afdc-8ed0-7a07" hidden="false">
+      <description>Any unit withing 12 &quot; may re-roll their break test.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2230,6 +2245,12 @@ Frag 2&quot; Blast</characteristic>
         <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
         <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
         <characteristic name="Special" typeId="7a82-d213-668b-916b">1 1/2&quot; blast template. REMAINS IN PLAY. Anything covered or touched by the template is destroyed on a roll of a 4+ with no armour save allowed. At the beginning of each side&apos;s turn, the cloud will on a roll of: 1-2 vanish 3-4 remain in play 5-6 scatter D6&quot; in a random direction</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7347-a6ca-9197-eaff" name="Flak Armour" hidden="false" typeId="a5cd-8edc-8e19-7e94" typeName="Armour">
+      <characteristics>
+        <characteristic name="Save Throw" typeId="13b6-56f8-41cf-f81a">6+</characteristic>
+        <characteristic name="Special" typeId="ec2b-7cde-d1b1-b9cb">5+ against blast radius</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
