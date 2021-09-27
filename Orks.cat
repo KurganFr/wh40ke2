@@ -43,10 +43,21 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7acd-6e67-7cca-dd28" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a08-293d-44eb-459e" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="dcc3-f69e-0342-cf0b" name="Armour" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="dcc3-f69e-0342-cf0b" name="Armour" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f233-117b-a9fb-a0d1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e0c-24d6-b2f6-f017" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="36f7-a0b1-8bbf-33f5" name="Flak Armour" hidden="false" collective="false" import="true" targetId="e215-5b57-50b1-f97d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="5afa-e9fd-0fc9-2ced" name="Wargear" hidden="true" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d75-47a7-cbca-e508" type="max"/>
@@ -95,7 +106,38 @@
             <entryLink id="4674-2a3c-7116-f47d" name="Gretchin Standard Bearer" hidden="false" collective="false" import="true" targetId="0ef8-5be1-b5bb-f0f8" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="d027-1f29-34ef-9615" name="Armour" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc59-8d9c-d3b7-2756" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d058-6632-5d48-73cd" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d0a0-234e-9b4a-91c3" name="Flak Armour" hidden="false" collective="false" import="true" targetId="e215-5b57-50b1-f97d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="af2a-a7a2-3c7b-d570" name="Wargear" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a9a-308f-5498-0e6f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b06f-4664-b952-1dd5" name="Wargear cards (all races)" hidden="false" collective="false" import="true" targetId="467f-11e9-ea0f-efd7" type="selectionEntryGroup"/>
+            <entryLink id="ef56-29d3-9070-596e" name="Ork Wargear" hidden="false" collective="false" import="true" targetId="bbac-a93d-3cdf-e9b3" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="98d1-b583-b5c1-ec61" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="770b-1ceb-bf50-abdf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0172-f2c7-81b5-c369" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c87c-9ea6-328f-6384" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7345-cbab-5042-e563" name="Assault Weapons" hidden="false" collective="false" import="true" targetId="ce2a-ce57-f22c-3f4e" type="selectionEntryGroup"/>
+        <entryLink id="77e9-afd5-e51d-acd8" name="Stikkbombz" hidden="false" collective="false" import="true" targetId="c91a-9895-05c4-38a2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -172,6 +214,9 @@
       <infoLinks>
         <infoLink id="9f61-e9cf-8a49-06aa" name="Gretchin Champion" hidden="false" targetId="aef7-96c7-51fe-e60b" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f361-8001-63fb-e9ab" name="Ork Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -193,6 +238,39 @@
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9090-ff23-2837-7987" name="Frag Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af63-83b7-f056-1823" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c56a-44fd-179b-96f7" name="Frag grenade" hidden="false" targetId="57db-7d1b-b930-1f65" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="833b-44a2-0bdc-ee4d" name="Krak Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd2d-a4c0-ffc9-2bf0" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c5ed-c688-a605-146d" name="Krak grenade" hidden="false" targetId="a0f6-2faf-cbdf-8750" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="83d8-6528-43d3-7cc2" name="Melta Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bae-acaf-6908-e9ac" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c61b-f14a-c4b9-b6f0" name="Melta bomb" hidden="false" targetId="b2a4-cc37-4d6c-d0db" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -279,6 +357,13 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="2f9b-bb54-6ba2-fa60" name="Mekaniaks Wargear" hidden="false" collective="false" import="true"/>
+    <selectionEntryGroup id="c91a-9895-05c4-38a2" name="Stikkbombz" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="3f7f-b7e3-d38b-0d4e" name="Frag Stikkbombz" hidden="false" collective="false" import="true" targetId="9090-ff23-2837-7987" type="selectionEntry"/>
+        <entryLink id="4bb0-20fc-ec56-7c2b" name="Melta Stikkbombz" hidden="false" collective="false" import="true" targetId="83d8-6528-43d3-7cc2" type="selectionEntry"/>
+        <entryLink id="86e7-56f5-3918-3c70" name="Krak Stikkbombz" hidden="false" collective="false" import="true" targetId="833b-44a2-0bdc-ee4d" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b724-2ee2-e91c-c0e5" name="Buzzer Squig Stikkbombz " publicationId="2daf-77ad-e2e4-d764" page="46" hidden="false">
