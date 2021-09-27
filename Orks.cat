@@ -7,7 +7,8 @@
     <selectionEntry id="0a42-2648-b069-d41c" name="Warboss" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd32-0add-8df4-c2c1" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4320-9711-1bc2-7eb5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4320-9711-1bc2-7eb5" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3676-84ce-5c4a-93e5" type="max"/>
       </constraints>
       <profiles>
         <profile id="a09b-b778-3acb-1b76" name="Warboss" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
@@ -37,6 +38,12 @@
             <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="fc7b-5939-a439-5513" name="Strategy  Rating 3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7acd-6e67-7cca-dd28" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a08-293d-44eb-459e" type="max"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="dcc3-f69e-0342-cf0b" name="Armour" hidden="false" collective="false" import="true"/>
@@ -44,6 +51,19 @@
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d75-47a7-cbca-e508" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="5529-2f99-1178-2b7c" name="Ork Wargear" hidden="false" collective="false" import="true" targetId="bbac-a93d-3cdf-e9b3" type="selectionEntryGroup"/>
+            <entryLink id="9203-44e2-74c3-4ecd" name="Wargear cards (all races)" hidden="false" collective="false" import="true" targetId="467f-11e9-ea0f-efd7" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1695-9709-135b-e10e" name="Gretchin Assistants" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80d3-a749-e289-0cc6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="343d-25b4-ed75-a0cd" name="Gretchin Assistant" hidden="false" collective="false" import="true" targetId="fd17-4cb3-42e0-5017" type="selectionEntry"/>
+            <entryLink id="0100-cc38-c0f3-02b8" name="Gretchin Champion" hidden="false" collective="false" import="true" targetId="2215-9cdf-5fa0-be7e" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -58,7 +78,124 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="65.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1657-adc6-89ac-1988" name="Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816e-45ee-ed75-7a9f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="92d4-9f1f-4353-5f34" name="New CategoryLink" hidden="false" targetId="0ac4-2a9a-0b56-10ba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2758-0443-42b0-4d47" name="Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cb1-3fdc-6c20-5d77" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d948-f5ea-6cc7-4ddc" name="Ork Standard Bearer" hidden="false" collective="false" import="true" targetId="f361-8001-63fb-e9ab" type="selectionEntry"/>
+            <entryLink id="4674-2a3c-7116-f47d" name="Gretchin Standard Bearer" hidden="false" collective="false" import="true" targetId="0ef8-5be1-b5bb-f0f8" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="a5a7-30fc-cb7e-b3f5" name="Buzzer Squig Stikkbombz " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8904-5336-714e-1e80" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="504a-f6ff-79e1-f9c3" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0ab0-de15-68c0-0a82" name="Buzzer Squig Stikkbombz " hidden="false" targetId="b724-2ee2-e91c-c0e5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f07-e644-6d2b-ad65" name="Cybork Body " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f764-0192-b9c1-4801" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c90-4845-1516-b88a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="b631-87a6-d0d7-6925" name="Cybork Body " hidden="false" targetId="7a65-8dfe-1be0-eab7" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="20c6-2f45-5133-300c" name="Doc&apos;s Tools " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4e-d6d4-71c6-6c51" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fa4e-3d8d-dca4-c081" name="Doc&apos;s Tools " hidden="false" targetId="b198-2e9f-0611-6f61" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="572f-1d6e-5bea-42db" name="Kustom Blasta " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebd4-4a10-e7e3-91a7" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ca0e-4283-d95a-931b" name="Kustom Blasta " hidden="false" targetId="978d-a5f0-9909-ffaa" type="rule"/>
+        <infoLink id="d853-1037-c1c9-8fb6" name="Kustom Blasta " hidden="false" targetId="598d-5ed9-1fd3-653a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cbc5-8d88-77c0-09bc" name="Kustom Force Field " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da98-cceb-ee26-29a5" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="dcc0-babb-11df-328e" name="Kustom Force Field " hidden="false" targetId="5815-2b05-d553-d6ac" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd17-4cb3-42e0-5017" name="Gretchin Assistant" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b41f-47e4-48ae-7af0" name="Gretchin Assistant" hidden="false" targetId="416b-1a79-8003-65da" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2215-9cdf-5fa0-be7e" name="Gretchin Champion" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5cf-17f3-d068-b8f9" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="9f61-e9cf-8a49-06aa" name="Gretchin Champion" hidden="false" targetId="aef7-96c7-51fe-e60b" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="f361-8001-63fb-e9ab" name="Ork Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6c5-bce4-cab9-95a2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d5fb-37dc-a8d0-4671" name="Ork Standard Bearer" hidden="false" targetId="44f3-4b0d-618c-079b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ef8-5be1-b5bb-f0f8" name="Gretchin Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460a-f304-2d2b-caae" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ad8d-c430-0ab6-28ba" name="Gretchin Standard Bearer" hidden="false" targetId="2e24-f8a5-fe6a-9eb0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="35.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ce2a-ce57-f22c-3f4e" name="Assault Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -128,7 +265,78 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="bbac-a93d-3cdf-e9b3" name="Ork Wargear" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0ee1-9ddb-2b83-4088" name="Buzzer Squig Stikkbombz " hidden="false" collective="false" import="true" targetId="a5a7-30fc-cb7e-b3f5" type="selectionEntry"/>
+        <entryLink id="9175-7667-a484-4d93" name="Cybork Body " hidden="false" collective="false" import="true" targetId="2f07-e644-6d2b-ad65" type="selectionEntry"/>
+        <entryLink id="de00-04dd-4149-ef2f" name="Kustom Blasta " hidden="false" collective="false" import="true" targetId="572f-1d6e-5bea-42db" type="selectionEntry"/>
+        <entryLink id="9468-ecd1-4af0-dcd0" name="Kustom Force Field " hidden="false" collective="false" import="true" targetId="cbc5-8d88-77c0-09bc" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="be8e-43da-5062-15d6" name="Painboyz Wargear" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="46a1-7305-191e-9c0a" name="Doc&apos;s Tools " hidden="false" collective="false" import="true" targetId="20c6-2f45-5133-300c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2f9b-bb54-6ba2-fa60" name="Mekaniaks Wargear" hidden="false" collective="false" import="true"/>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="b724-2ee2-e91c-c0e5" name="Buzzer Squig Stikkbombz " publicationId="2daf-77ad-e2e4-d764" page="46" hidden="false">
+      <description>Buzzer Squig Stikkbombz are made out of clay and hold a whole swarm of ferocious Buzzer
+squigs. When the stikkbomb is thrown the clay pot breaks and the Buzzer squigs come flying
+out to attack anything nearby. The Buzzer squig stikkbomb is thrown in exactly the same way
+as a grenade. Place a Buzzer Squig template wherever the stikkbomb lands. Work out the
+effect of the Buzzer squigs as if a Squig katapult attack had landed at the same spot (see the
+Ork Codex, pg. 15). 
+ONE USE ONLY. DISCARD AFTER USE
+</description>
+    </rule>
+    <rule id="7a65-8dfe-1be0-eab7" name="Cybork Body " publicationId="2daf-77ad-e2e4-d764" page="46" hidden="false">
+      <description>Orks who suffer really terrible injuries can have their bodies replaced with Cybork parts. This
+restores the Ork to fighting fitness and increases his Strength and wounds by +2 points. In
+addition, if the Ork is hit by an attack then he is treated in the same way as a vehicle or
+Dreadnought with an armour value of 15. Roll for the armour penetration of the attack as
+normal. If the attack equals the armour value, then the Ork is knocked over and may not
+move or fire in his next turn while he stands up. If the attack beats the Ork’s armour value,
+then he is knocked over as above and suffers 1 wound for each point the attack beat the 
+armour value by (e.g. if the attack scored 17 for its armour penetration then the Ork would be 
+knocked over and suffer 2 wounds). 
+ORKS ONLY
+Rare </description>
+    </rule>
+    <rule id="b198-2e9f-0611-6f61" name="Doc&apos;s Tools " publicationId="2daf-77ad-e2e4-d764" page="47" hidden="false">
+      <description>Ork Painboyz often carry a huge array ‘tools of the trade’. Although these are primarily meant
+for use on injured Orks, the Painboy is not above using them as offensive weapons in handto-hand
+
+combat. A Painboy with a set of tools always counts as having two hand-to-hand
+combat weapons, and so always rolls an extra dice in hand-to-hand combat. If the Painboy
+wins a round of combat and inflicts at least 1 wound then the opponent is assumed to have
+been injected with a Syringe squig. This knocks the victim out and they are removed as a
+casualty even if they have any wounds remaining. 
+ 
+ 
+PAINBOYZ ONLY
+Common </description>
+    </rule>
+    <rule id="978d-a5f0-9909-ffaa" name="Kustom Blasta " publicationId="2daf-77ad-e2e4-d764" page="47" hidden="false">
+      <description>A kustom blasta is a big rocket launcher or grenade lobber fitted with an Ork Mekboy&apos;s
+speshul kustom warheads. The kustom blasta has an unpredictable blast marker with a D3&quot;
+radius - roll for the size of the blast marker each time the weapon is fired. It also has a 
+variable Strength, which is rolled on the artillery dice each time it is fired, giving it a Strength
+of between 2 and 10. If a misfire is rolled on the artillery dice the kustom blasta has exploded!
+The blasta is destroyed and the Ork carrying it suffers an S4 hit.  </description>
+    </rule>
+    <rule id="5815-2b05-d553-d6ac" name="Kustom Force Field " hidden="false">
+      <description>A kustom force field is an Orky device, which careens wildly from providing virtual
+invulnerability to little more than an embarrassing crackle as shells whistle straight through it!
+Whenever an Ork equipped with a kustom refraktor field is hit roll a D6 and deduct the result
+from the Strength of the incoming hit. On a roll of 6 the hit is automatically stopped but the
+Ork suffers an S3 hit instead as the field shorts out and gives him a nasty shock. If the field
+shorts out this card is discarded immediately.  
+ 
+ORKS ONLY </description>
+    </rule>
+  </sharedRules>
   <sharedProfiles>
     <profile id="9e55-bc50-b7bf-f9e4" name="Gretchin" publicationId="2daf-77ad-e2e4-d764" page="61" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
       <characteristics>
@@ -611,7 +819,7 @@
         <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
         <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
         <characteristic name="S" typeId="0319-3c37-e162-4b91">6</characteristic>
-        <characteristic name="T" typeId="5f47-635d-1d18-f032"></characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
         <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
         <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
         <characteristic name="A" typeId="e552-a664-ec27-63e1">4</characteristic>
@@ -756,6 +964,19 @@
         <characteristic name="I" typeId="00ea-652b-3c5a-c821"/>
         <characteristic name="A" typeId="e552-a664-ec27-63e1"/>
         <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88"/>
+      </characteristics>
+    </profile>
+    <profile id="598d-5ed9-1fd3-653a" name="Kustom Blasta " hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">0-16</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">16-36</characteristic>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8">-</characteristic>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f">-1</characteristic>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">Art. Dice</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-1</characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">Various</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">D3&quot; blast</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
