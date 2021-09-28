@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e0ae-0a29-c2e0-c2e1" name="Orks" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="c4b9-a6a1-afa3-b191" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="2daf-77ad-e2e4-d764" name="Codex Orks [Warhammer 40k 2nd edition]"/>
+  </publications>
+  <selectionEntries>
+    <selectionEntry id="0a42-2648-b069-d41c" name="Warboss" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd32-0add-8df4-c2c1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4320-9711-1bc2-7eb5" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3676-84ce-5c4a-93e5" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a09b-b778-3acb-1b76" name="Warboss" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+          <characteristics>
+            <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+            <characteristic name="WS" typeId="dcee-da4d-768f-7e34">6</characteristic>
+            <characteristic name="BS" typeId="b534-9a50-035a-cfff">6</characteristic>
+            <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+            <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+            <characteristic name="W" typeId="0f97-a404-36e5-57f8">3</characteristic>
+            <characteristic name="I" typeId="00ea-652b-3c5a-c821">5</characteristic>
+            <characteristic name="A" typeId="e552-a664-ec27-63e1">3</characteristic>
+            <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">9</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="63a4-245a-0d6a-c76d" name="New CategoryLink" hidden="false" targetId="0ac4-2a9a-0b56-10ba" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d0f6-1c0f-0bf5-c0ee" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0b-c467-5ee2-aaf5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c748-e87b-6e9d-7ac3" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fc7b-5939-a439-5513" name="Strategy  Rating 3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7acd-6e67-7cca-dd28" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a08-293d-44eb-459e" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dcc3-f69e-0342-cf0b" name="Armour" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f233-117b-a9fb-a0d1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e0c-24d6-b2f6-f017" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="36f7-a0b1-8bbf-33f5" name="Flak Armour" hidden="false" collective="false" import="true" targetId="e215-5b57-50b1-f97d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5afa-e9fd-0fc9-2ced" name="Wargear" hidden="true" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d75-47a7-cbca-e508" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5529-2f99-1178-2b7c" name="Ork Wargear" hidden="false" collective="false" import="true" targetId="bbac-a93d-3cdf-e9b3" type="selectionEntryGroup"/>
+            <entryLink id="9203-44e2-74c3-4ecd" name="Wargear cards (all races)" hidden="false" collective="false" import="true" targetId="467f-11e9-ea0f-efd7" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1695-9709-135b-e10e" name="Gretchin Assistants" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80d3-a749-e289-0cc6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="343d-25b4-ed75-a0cd" name="Gretchin Assistant" hidden="false" collective="false" import="true" targetId="fd17-4cb3-42e0-5017" type="selectionEntry"/>
+            <entryLink id="0100-cc38-c0f3-02b8" name="Gretchin Champion" hidden="false" collective="false" import="true" targetId="2215-9cdf-5fa0-be7e" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8a75-b639-0bcf-bacc" name="Assault Weapons" hidden="false" collective="false" import="true" targetId="ce2a-ce57-f22c-3f4e" type="selectionEntryGroup"/>
+        <entryLink id="e6c6-b7b1-bf12-faaa" name="Special Weapons" hidden="false" collective="false" import="true" targetId="2a51-12f8-7038-831d" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="961f-a4ff-4f90-11be" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1657-adc6-89ac-1988" name="Battle Standard" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816e-45ee-ed75-7a9f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="92d4-9f1f-4353-5f34" name="New CategoryLink" hidden="false" targetId="0ac4-2a9a-0b56-10ba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2758-0443-42b0-4d47" name="Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cb1-3fdc-6c20-5d77" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d948-f5ea-6cc7-4ddc" name="Ork Standard Bearer" hidden="false" collective="false" import="true" targetId="f361-8001-63fb-e9ab" type="selectionEntry"/>
+            <entryLink id="4674-2a3c-7116-f47d" name="Gretchin Standard Bearer" hidden="false" collective="false" import="true" targetId="0ef8-5be1-b5bb-f0f8" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d027-1f29-34ef-9615" name="Armour" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc59-8d9c-d3b7-2756" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d058-6632-5d48-73cd" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d0a0-234e-9b4a-91c3" name="Flak Armour" hidden="false" collective="false" import="true" targetId="e215-5b57-50b1-f97d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="af2a-a7a2-3c7b-d570" name="Wargear" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a9a-308f-5498-0e6f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b06f-4664-b952-1dd5" name="Wargear cards (all races)" hidden="false" collective="false" import="true" targetId="467f-11e9-ea0f-efd7" type="selectionEntryGroup"/>
+            <entryLink id="ef56-29d3-9070-596e" name="Ork Wargear" hidden="false" collective="false" import="true" targetId="bbac-a93d-3cdf-e9b3" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="98d1-b583-b5c1-ec61" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="770b-1ceb-bf50-abdf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0172-f2c7-81b5-c369" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c87c-9ea6-328f-6384" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7345-cbab-5042-e563" name="Assault Weapons" hidden="false" collective="false" import="true" targetId="ce2a-ce57-f22c-3f4e" type="selectionEntryGroup"/>
+        <entryLink id="77e9-afd5-e51d-acd8" name="Stikkbombz" hidden="false" collective="false" import="true" targetId="c91a-9895-05c4-38a2" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="a5a7-30fc-cb7e-b3f5" name="Buzzer Squig Stikkbombz " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8904-5336-714e-1e80" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="504a-f6ff-79e1-f9c3" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0ab0-de15-68c0-0a82" name="Buzzer Squig Stikkbombz " hidden="false" targetId="b724-2ee2-e91c-c0e5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f07-e644-6d2b-ad65" name="Cybork Body " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f764-0192-b9c1-4801" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c90-4845-1516-b88a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="b631-87a6-d0d7-6925" name="Cybork Body " hidden="false" targetId="7a65-8dfe-1be0-eab7" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="20c6-2f45-5133-300c" name="Doc&apos;s Tools " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4e-d6d4-71c6-6c51" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fa4e-3d8d-dca4-c081" name="Doc&apos;s Tools " hidden="false" targetId="b198-2e9f-0611-6f61" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="572f-1d6e-5bea-42db" name="Kustom Blasta " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebd4-4a10-e7e3-91a7" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ca0e-4283-d95a-931b" name="Kustom Blasta " hidden="false" targetId="978d-a5f0-9909-ffaa" type="rule"/>
+        <infoLink id="d853-1037-c1c9-8fb6" name="Kustom Blasta " hidden="false" targetId="598d-5ed9-1fd3-653a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cbc5-8d88-77c0-09bc" name="Kustom Force Field " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da98-cceb-ee26-29a5" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="dcc0-babb-11df-328e" name="Kustom Force Field " hidden="false" targetId="5815-2b05-d553-d6ac" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd17-4cb3-42e0-5017" name="Gretchin Assistant" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b41f-47e4-48ae-7af0" name="Gretchin Assistant" hidden="false" targetId="416b-1a79-8003-65da" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2215-9cdf-5fa0-be7e" name="Gretchin Champion" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5cf-17f3-d068-b8f9" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="9f61-e9cf-8a49-06aa" name="Gretchin Champion" hidden="false" targetId="aef7-96c7-51fe-e60b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f361-8001-63fb-e9ab" name="Ork Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6c5-bce4-cab9-95a2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d5fb-37dc-a8d0-4671" name="Ork Standard Bearer" hidden="false" targetId="44f3-4b0d-618c-079b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ef8-5be1-b5bb-f0f8" name="Gretchin Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460a-f304-2d2b-caae" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ad8d-c430-0ab6-28ba" name="Gretchin Standard Bearer" hidden="false" targetId="2e24-f8a5-fe6a-9eb0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9090-ff23-2837-7987" name="Frag Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af63-83b7-f056-1823" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c56a-44fd-179b-96f7" name="Frag grenade" hidden="false" targetId="57db-7d1b-b930-1f65" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="833b-44a2-0bdc-ee4d" name="Krak Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd2d-a4c0-ffc9-2bf0" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c5ed-c688-a605-146d" name="Krak grenade" hidden="false" targetId="a0f6-2faf-cbdf-8750" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="83d8-6528-43d3-7cc2" name="Melta Stikkbombz" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bae-acaf-6908-e9ac" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c61b-f14a-c4b9-b6f0" name="Melta bomb" hidden="false" targetId="b2a4-cc37-4d6c-d0db" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="5.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="ce2a-ce57-f22c-3f4e" name="Assault Weapons" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="225b-e772-8c0a-e1f1" name="Auto pistol" hidden="false" collective="false" import="true" targetId="8893-2eb7-85e6-1dd9" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7494-64db-efe5-886f" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="770b-1ceb-bf50-abdf" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="018f-25f4-2e09-e3b9" name="Chainsword" hidden="false" collective="false" import="true" targetId="bd78-cc20-f5a0-07f7" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="d9b8-dd2f-f8e3-511c" name="Power Axe" hidden="false" collective="false" import="true" targetId="b1ad-bdb6-b420-69a5" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="7.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="25d9-ce37-564d-04cb" name="Power Fist (Nobz and characters only)" hidden="false" collective="false" import="true" targetId="36a3-d1f8-80f5-52d6" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6f12-dba9-cdac-012c" name="Sword or Axe" hidden="false" collective="false" import="true" targetId="c887-cc4f-364b-e290" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b7ae-d266-1a5d-093f" name="Hand flamer" hidden="false" collective="false" import="true" targetId="cdc8-8840-1cd8-6f7c" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="6.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ed3f-1be7-a6cb-242e" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="8ea0-f58c-16c7-1052" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="4.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2a51-12f8-7038-831d" name="Special Weapons" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="6465-7ac8-3ca3-4623" name="Boltgun" hidden="false" collective="false" import="true" targetId="db66-c0c3-1be6-5835" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="3.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b30b-2004-efc4-0e97" name="Flamer" hidden="false" collective="false" import="true" targetId="789a-e16a-5d39-43af" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="7.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8d74-d4ce-9266-18b6" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="05e5-f0a8-ae31-ae6f" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="6.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="fa23-d300-b80d-67b7" name="Melta gun" hidden="false" collective="false" import="true" targetId="790d-8c71-1ff4-20a7" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="6.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bbac-a93d-3cdf-e9b3" name="Ork Wargear" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0ee1-9ddb-2b83-4088" name="Buzzer Squig Stikkbombz " hidden="false" collective="false" import="true" targetId="a5a7-30fc-cb7e-b3f5" type="selectionEntry"/>
+        <entryLink id="9175-7667-a484-4d93" name="Cybork Body " hidden="false" collective="false" import="true" targetId="2f07-e644-6d2b-ad65" type="selectionEntry"/>
+        <entryLink id="de00-04dd-4149-ef2f" name="Kustom Blasta " hidden="false" collective="false" import="true" targetId="572f-1d6e-5bea-42db" type="selectionEntry"/>
+        <entryLink id="9468-ecd1-4af0-dcd0" name="Kustom Force Field " hidden="false" collective="false" import="true" targetId="cbc5-8d88-77c0-09bc" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="be8e-43da-5062-15d6" name="Painboyz Wargear" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="46a1-7305-191e-9c0a" name="Doc&apos;s Tools " hidden="false" collective="false" import="true" targetId="20c6-2f45-5133-300c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2f9b-bb54-6ba2-fa60" name="Mekaniaks Wargear" hidden="false" collective="false" import="true"/>
+    <selectionEntryGroup id="c91a-9895-05c4-38a2" name="Stikkbombz" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="3f7f-b7e3-d38b-0d4e" name="Frag Stikkbombz" hidden="false" collective="false" import="true" targetId="9090-ff23-2837-7987" type="selectionEntry"/>
+        <entryLink id="4bb0-20fc-ec56-7c2b" name="Melta Stikkbombz" hidden="false" collective="false" import="true" targetId="83d8-6528-43d3-7cc2" type="selectionEntry"/>
+        <entryLink id="86e7-56f5-3918-3c70" name="Krak Stikkbombz" hidden="false" collective="false" import="true" targetId="833b-44a2-0bdc-ee4d" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="b724-2ee2-e91c-c0e5" name="Buzzer Squig Stikkbombz " publicationId="2daf-77ad-e2e4-d764" page="46" hidden="false">
+      <description>Buzzer Squig Stikkbombz are made out of clay and hold a whole swarm of ferocious Buzzer
+squigs. When the stikkbomb is thrown the clay pot breaks and the Buzzer squigs come flying
+out to attack anything nearby. The Buzzer squig stikkbomb is thrown in exactly the same way
+as a grenade. Place a Buzzer Squig template wherever the stikkbomb lands. Work out the
+effect of the Buzzer squigs as if a Squig katapult attack had landed at the same spot (see the
+Ork Codex, pg. 15). 
+ONE USE ONLY. DISCARD AFTER USE
+</description>
+    </rule>
+    <rule id="7a65-8dfe-1be0-eab7" name="Cybork Body " publicationId="2daf-77ad-e2e4-d764" page="46" hidden="false">
+      <description>Orks who suffer really terrible injuries can have their bodies replaced with Cybork parts. This
+restores the Ork to fighting fitness and increases his Strength and wounds by +2 points. In
+addition, if the Ork is hit by an attack then he is treated in the same way as a vehicle or
+Dreadnought with an armour value of 15. Roll for the armour penetration of the attack as
+normal. If the attack equals the armour value, then the Ork is knocked over and may not
+move or fire in his next turn while he stands up. If the attack beats the Ork’s armour value,
+then he is knocked over as above and suffers 1 wound for each point the attack beat the 
+armour value by (e.g. if the attack scored 17 for its armour penetration then the Ork would be 
+knocked over and suffer 2 wounds). 
+ORKS ONLY
+Rare </description>
+    </rule>
+    <rule id="b198-2e9f-0611-6f61" name="Doc&apos;s Tools " publicationId="2daf-77ad-e2e4-d764" page="47" hidden="false">
+      <description>Ork Painboyz often carry a huge array ‘tools of the trade’. Although these are primarily meant
+for use on injured Orks, the Painboy is not above using them as offensive weapons in handto-hand
+
+combat. A Painboy with a set of tools always counts as having two hand-to-hand
+combat weapons, and so always rolls an extra dice in hand-to-hand combat. If the Painboy
+wins a round of combat and inflicts at least 1 wound then the opponent is assumed to have
+been injected with a Syringe squig. This knocks the victim out and they are removed as a
+casualty even if they have any wounds remaining. 
+ 
+ 
+PAINBOYZ ONLY
+Common </description>
+    </rule>
+    <rule id="978d-a5f0-9909-ffaa" name="Kustom Blasta " publicationId="2daf-77ad-e2e4-d764" page="47" hidden="false">
+      <description>A kustom blasta is a big rocket launcher or grenade lobber fitted with an Ork Mekboy&apos;s
+speshul kustom warheads. The kustom blasta has an unpredictable blast marker with a D3&quot;
+radius - roll for the size of the blast marker each time the weapon is fired. It also has a 
+variable Strength, which is rolled on the artillery dice each time it is fired, giving it a Strength
+of between 2 and 10. If a misfire is rolled on the artillery dice the kustom blasta has exploded!
+The blasta is destroyed and the Ork carrying it suffers an S4 hit.  </description>
+    </rule>
+    <rule id="5815-2b05-d553-d6ac" name="Kustom Force Field " hidden="false">
+      <description>A kustom force field is an Orky device, which careens wildly from providing virtual
+invulnerability to little more than an embarrassing crackle as shells whistle straight through it!
+Whenever an Ork equipped with a kustom refraktor field is hit roll a D6 and deduct the result
+from the Strength of the incoming hit. On a roll of 6 the hit is automatically stopped but the
+Ork suffers an S3 hit instead as the field shorts out and gives him a nasty shock. If the field
+shorts out this card is discarded immediately.  
+ 
+ORKS ONLY </description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="9e55-bc50-b7bf-f9e4" name="Gretchin" publicationId="2daf-77ad-e2e4-d764" page="61" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">2</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">3</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="67a4-8d48-43bd-e00c" name="Snotling herd" publicationId="2daf-77ad-e2e4-d764" page="61" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">2</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">2</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">1</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">1</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">3</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">3</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a816-45f5-61d9-d2bd" name="Evil Sunz Boyz" publicationId="2daf-77ad-e2e4-d764" page="60" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4bdf-6be7-2b25-0bb1" name="Snakebite Boyz" publicationId="2daf-77ad-e2e4-d764" page="60" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cb4b-4b2e-3c9f-7191" name="War Boar" publicationId="2daf-77ad-e2e4-d764" page="60" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">7</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">0</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="da98-c349-38f3-968f" name="Cyboar" publicationId="2daf-77ad-e2e4-d764" page="60" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">10</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">0</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">3</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">4</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="768f-6196-d8a1-3480" name="Deathskull Loota" publicationId="2daf-77ad-e2e4-d764" page="60" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9429-f25e-4d9a-259e" name="Goff Boyz" publicationId="2daf-77ad-e2e4-d764" page="60" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="edf1-b9b5-21b5-d3b9" name="Skarboyz" publicationId="2daf-77ad-e2e4-d764" page="60" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b26e-eb67-1a4a-00de" name="Stormboyz" publicationId="2daf-77ad-e2e4-d764" page="59" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">3</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e880-17dc-5e9c-6955" name="Bad Moon Boyz" publicationId="2daf-77ad-e2e4-d764" page="59" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7dbb-71cb-0a45-f8c6" name="Blood Axe Boyz" publicationId="2daf-77ad-e2e4-d764" page="59" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c052-32a1-1851-be68" name="Mad Boyz" publicationId="2daf-77ad-e2e4-d764" page="59" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>special rules regarding madness, can only have 1 mob per army</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4136-5992-ca38-58e9" name="Freebooter Pirate Boyz" publicationId="2daf-77ad-e2e4-d764" page="58" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fea5-71d0-d589-6e80" name="Blood Axe Kommandos" publicationId="2daf-77ad-e2e4-d764" page="59" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>Infiltrators, 0-1 mob per army</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6933-a451-d91b-5ea9" name="Nob" publicationId="2daf-77ad-e2e4-d764" page="58" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>Either as single characters in mobs or as a mob of several nobz</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="416b-1a79-8003-65da" name="Gretchin Assistant" publicationId="2daf-77ad-e2e4-d764" page="57" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">2</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">3</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aef7-96c7-51fe-e60b" name="Gretchin Champion" publicationId="2daf-77ad-e2e4-d764" page="57" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">3</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="545f-69ee-7ea1-412b" name="Ogryn Champion" publicationId="2daf-77ad-e2e4-d764" page="57" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">6</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">5</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">3</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">5</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c317-fb1e-63d0-64de" name="Ogryn Hero" publicationId="2daf-77ad-e2e4-d764" page="57" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">6</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">6</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">5</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">6</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">6</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">4</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">6</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">3</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="85a3-0c6f-6e42-cd6b" name="Ogryn Mighty Hero" publicationId="2daf-77ad-e2e4-d764" page="57" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">6</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">7</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">6</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">6</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">6</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">5</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">7</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">4</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e110-ae6c-94c1-e0ef" name="Weirdboy Warphead" publicationId="2daf-77ad-e2e4-d764" page="57" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1, psyker lvl 4, must have 4 minderz</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">3</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">5</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">3</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8e30-91e2-c293-578b" name="Minderz" publicationId="2daf-77ad-e2e4-d764" page="57" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>accompany weirdboyz</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8e18-939d-4b58-3a49" name="Painboy" publicationId="2daf-77ad-e2e4-d764" page="56" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>may have up to 4 gretchin assistants</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="26c3-1cff-10a4-6473" name="Weirdboy" publicationId="2daf-77ad-e2e4-d764" page="56" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1 per army, +1 per bad moon mob, psyker lvl 2, must have 2 minderz</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3c7e-4c65-809e-72d6" name="Mekaniak" publicationId="2daf-77ad-e2e4-d764" page="56" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1 per army, +1 per evil sunz mob, may have up to 4 assistants</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0d32-f38f-8225-7d98" name="Runtherd" publicationId="2daf-77ad-e2e4-d764" page="56" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1 per army, +1 per snakebite mob. May have up to 4 assistants</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac22-e6e5-cfe9-b503" name="Blood Axe Kommando Kaptin" publicationId="2daf-77ad-e2e4-d764" page="55" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1, infiltrator</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">5</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">2</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">5</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1152-089f-159e-1af2" name="Freebooter Kaptin" publicationId="2daf-77ad-e2e4-d764" page="55" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>may have up to 4 assistants, 2 wargear</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">5</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">2</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">4</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bbdc-13cd-dd09-5738" name="Drillboss" publicationId="2daf-77ad-e2e4-d764" page="55" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2e4d-e137-d405-e1ab" name="Bigboss" publicationId="2daf-77ad-e2e4-d764" page="54" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">5</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">2</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">4</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="44f3-4b0d-618c-079b" name="Ork Standard Bearer" publicationId="2daf-77ad-e2e4-d764" page="54" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1, Ld re-roll for units within 12&quot;</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2e24-f8a5-fe6a-9eb0" name="Gretchin Standard Bearer" publicationId="2daf-77ad-e2e4-d764" page="54" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1, Ld reroll for units within 12&quot;</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">3</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">3</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="db3e-5e8a-b057-046d" name="Warboss" publicationId="2daf-77ad-e2e4-d764" page="54" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1, army leader, strat. rating: 3, may have up to 4 assistants. units within 12&quot; may use warboss Ld value</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">6</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">6</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">3</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">5</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">3</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dd1e-bfc9-ad46-c1b3" name="Ogryns" publicationId="2daf-77ad-e2e4-d764" page="61" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>0-1 mob</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">6</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">3</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">5</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">3</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">4</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8a2c-b821-6bf6-9fe8" name="Ork Dreadnought" publicationId="2daf-77ad-e2e4-d764" page="61" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>Walker profile. requires at least one mekaniak AND painboy in army</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">6</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">6</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">4</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6ad5-3ae1-3a96-102a" name="Pulsa Rokkit" publicationId="2daf-77ad-e2e4-d764" page="62" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <comment>All special rules</comment>
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f"/>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b"/>
+      </characteristics>
+    </profile>
+    <profile id="a233-a760-acad-d103" name="Squig katapult" publicationId="2daf-77ad-e2e4-d764" page="62" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <comment>all special</comment>
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f"/>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b"/>
+      </characteristics>
+    </profile>
+    <profile id="3894-dddd-f1b0-7c55" name="Smasha gun" publicationId="2daf-77ad-e2e4-d764" page="62" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <comment>all special</comment>
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f"/>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b"/>
+      </characteristics>
+    </profile>
+    <profile id="91cd-c16f-327c-4851" name="Traktor kannon" publicationId="2daf-77ad-e2e4-d764" page="62" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <comment>all special</comment>
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f"/>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794"/>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8"/>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884"/>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a"/>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70"/>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db"/>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b"/>
+      </characteristics>
+    </profile>
+    <profile id="5065-9df2-2b56-dd0a" name="Ork Battlewagon" publicationId="2daf-77ad-e2e4-d764" page="62" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>vehicle profile, requires at least one mekaniak in army</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8"/>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34"/>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff"/>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91"/>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821"/>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1"/>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88"/>
+      </characteristics>
+    </profile>
+    <profile id="57c9-2a3f-27a2-b13a" name="War buggy" publicationId="2daf-77ad-e2e4-d764" page="63" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>vehicle profile</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8"/>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34"/>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff"/>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91"/>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821"/>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1"/>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88"/>
+      </characteristics>
+    </profile>
+    <profile id="635d-f143-50d9-7893" name="Ork wartrak" publicationId="2daf-77ad-e2e4-d764" page="63" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>vehicle profile, requires at least one mekaniak in army</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8"/>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34"/>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff"/>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91"/>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821"/>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1"/>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88"/>
+      </characteristics>
+    </profile>
+    <profile id="fff0-0157-5202-cfb2" name="Nobz bike" publicationId="2daf-77ad-e2e4-d764" page="63" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>bike with sidecar</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8"/>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34"/>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff"/>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91"/>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821"/>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1"/>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88"/>
+      </characteristics>
+    </profile>
+    <profile id="9876-0bca-f652-01e5" name="Scorcher" publicationId="2daf-77ad-e2e4-d764" page="63" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>vehicle profile, requires at least one mekaniak in army</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8"/>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34"/>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff"/>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91"/>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821"/>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1"/>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88"/>
+      </characteristics>
+    </profile>
+    <profile id="f2d2-c5fe-dade-1d87" name="Warbike" publicationId="2daf-77ad-e2e4-d764" page="63" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <comment>vehicle profile</comment>
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8"/>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34"/>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff"/>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91"/>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032"/>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8"/>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821"/>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1"/>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88"/>
+      </characteristics>
+    </profile>
+    <profile id="598d-5ed9-1fd3-653a" name="Kustom Blasta " hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">0-16</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">16-36</characteristic>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8">-</characteristic>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f">-1</characteristic>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">Art. Dice</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-1</characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">Various</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">D3&quot; blast</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
