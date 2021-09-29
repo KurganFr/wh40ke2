@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c4b9-a6a1-afa3-b191" name="Warhammer 40k 2nd edition" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c4b9-a6a1-afa3-b191" name="Warhammer 40k 2nd edition" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="919e-afdc-8ed0-7a07" name="Rulebook"/>
     <publication id="8167-4242-0f4b-4102" name="Wargear"/>
     <publication id="6f74-7607-b707-3103" name="Codex Angels of Death" shortName="CoAoD"/>
     <publication id="59b5-24e1-c498-df3f" name="White Dwarf"/>
+    <publication id="4593-0fcb-9177-7e7e" name="Codex Chaos"/>
   </publications>
   <costTypes>
     <costType id="30e6-896a-8419-941b" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -974,6 +975,46 @@ Blinds unprotected troops on 4, 5 of 6.</description>
     </rule>
     <rule id="bbb4-09e3-51e8-a126" name="Flak vest" publicationId="919e-afdc-8ed0-7a07" hidden="false">
       <description>Sv 6+, SvM +1 against template weapons</description>
+    </rule>
+    <rule id="1fc0-07ee-e6d4-a7d6" name="Mesh armour" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>Sv 5+</description>
+    </rule>
+    <rule id="b840-49a9-99d3-62cb" name="Power armour" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>Sv 3+</description>
+    </rule>
+    <rule id="151c-e8e5-e92d-c4d5" name="Carapace armour" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>Sv 4+</description>
+    </rule>
+    <rule id="a36b-cc4f-10bc-c955" name="Exo-suit armour" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>Sv 4+ on 2D6, includes bolter, targeter (+1 to hit in ranged combat) and power axe</description>
+    </rule>
+    <rule id="25df-6145-ed97-7ee0" name="Terminator armour" publicationId="8167-4242-0f4b-4102" hidden="false">
+      <description>Sv 3+ on 2D6, includes targeter (+1 to hit in ranged combat)</description>
+    </rule>
+    <rule id="5134-ea73-6e0b-e8ce" name="Blood Greed" publicationId="4593-0fcb-9177-7e7e" hidden="false">
+      <description>Eats enemies after succesful hth combat. Can&apos;t follow-up or use psychic powers after succesful hth combat. Will get frenzied for the remainder of the turn if charged while eating the killed enemies</description>
+    </rule>
+    <rule id="6b03-5a23-3d0f-358b" name="Discord" publicationId="4593-0fcb-9177-7e7e" hidden="false">
+      <description>Units within 12&quot; cannot move or shoot on a roll of 1 on a D6.  Roll for each squad/independent model. Daemons in range automatically fail animosity test (treat as &quot;1&quot;).</description>
+    </rule>
+    <rule id="2bf6-ce00-0041-5fcb" name="Fear" publicationId="919e-afdc-8ed0-7a07" page="65" hidden="false">
+      <description>1) Charged units have to pass an LD test if the charging unit is in range. If failed and outnumbered by the attacker, the charged unit breaks. If failed and not outnumbered, the unit will fight with half WS (rounded up) and may not fire overwatch at the attacker. 
+2) Hits by weapons causing fear (no matter the casualties) will cause an LD test. If failed, unit breaks.
+3) Units charging a unit which causes fear must first pass an LD test. If failed, they may not charge, but still shoot.
+4) as long as unit is outnumbered by fear-causing unit in close combat: Take a break test at the end of each hth phase.
+5)  Fear-causing units are not affected by other units which cause fear. Units which cause terror will cause fear in them.</description>
+    </rule>
+    <rule id="3360-fac3-1572-503f" name="Frenzy" publicationId="919e-afdc-8ed0-7a07" page="67" hidden="false">
+      <description>May take LD test to not be frenzied for one turn or remain frenzied until broken in hth or when no enemy is in range. Ignores psychology when frenzied. Has to charge any enemy unit in range, uses twice its A-value not including any other bonuses.  Always has to follow-up into nearest enemy and may not parry. Will not count as frenzied after having rallyed.</description>
+    </rule>
+    <rule id="65c3-23f8-deb4-a2aa" name="Hatred" publicationId="919e-afdc-8ed0-7a07" page="67" hidden="false">
+      <description>Take break-tests against hated enemies with LD10, may re-roll attack-dice against them when they attack hated enemy first. Must always follow-up closer to hated enemy or to engage them.</description>
+    </rule>
+    <rule id="29d3-2192-819d-db86" name="Stupidity" publicationId="919e-afdc-8ed0-7a07" page="66" hidden="false">
+      <description>At the start of their turn, must take a break test. If failed, may not attack when already in hth on a further roll of 1-3 on 1D6. If not in hth, roll 1D6 for each stupid unit: 1-3 each stupid creature moves regular M-value in random direction (scatter dice). 4-6: May not do anything at all this turn. Stupid units ignore all other psychology. If broken, stupidty will not apply until the unit has rallied.</description>
+    </rule>
+    <rule id="29e5-574a-3072-53d1" name="Terror" publicationId="919e-afdc-8ed0-7a07" page="66" hidden="false">
+      <description>Units which cause terror are not affected by terror or fear. Causes Fear in units which cause fear. Units charged or within 8&quot; have to pass LD  test once per game or flee 2D6&quot; directly away from terrifying unit/model (regardless of cover). Causes fear in subsequent encounters unless the initial terror LD test has been passed. In that case, no fear is caused either. Each unit will have to do a terror test only once per game.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
