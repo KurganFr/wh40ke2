@@ -6,10 +6,6 @@
   </publications>
   <selectionEntries>
     <selectionEntry id="2665-3ab9-51ea-dd8a" name="Squat  Warriors" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eab1-e57c-43cf-db07" type="max"/>
-        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f11d-6aa5-6d69-d714" type="min"/>
-      </constraints>
       <infoLinks>
         <infoLink id="2f44-0f0d-01cd-5270" name="Squat Warrior" publicationId="9cb2-5b54-e948-fb7c" hidden="false" targetId="ba2b-56fa-67c1-ee4b" type="profile"/>
       </infoLinks>
@@ -19,8 +15,8 @@
     </selectionEntry>
     <selectionEntry id="7630-e4ef-05bd-2f27" name="Squat Warlord" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="476d-1478-cb0e-7663" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3216-766e-d99b-00ca" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="476d-1478-cb0e-7663" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3216-766e-d99b-00ca" type="min"/>
       </constraints>
       <infoLinks>
         <infoLink id="ff03-0dba-68fc-7678" name="Squat Warlord" publicationId="9cb2-5b54-e948-fb7c" hidden="false" targetId="d637-c8b5-74ea-8f78" type="profile"/>
@@ -29,12 +25,20 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="74.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d905-7ef5-4265-df43" name="Ancestor Lord" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="a3b8-9fbf-d722-d7b7" name="Ancestor Lord" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" targetId="9ed0-8158-dfc1-294d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="113.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="e06f-2cdf-ea19-f65e" name="Hatred of orks" hidden="false" collective="false" import="true" targetId="0e00-fb5a-5a04-d5f9" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b642-fb98-08ef-1e77" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c4-997d-9059-2d2d" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b642-fb98-08ef-1e77" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c4-997d-9059-2d2d" type="min"/>
       </constraints>
     </entryLink>
   </entryLinks>
@@ -55,7 +59,7 @@
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="d637-c8b5-74ea-8f78" name="Squat Warlord" publicationId="9cb2-5b54-e948-fb7c" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+    <profile id="d637-c8b5-74ea-8f78" name="Squat Warlord" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
       <characteristics>
         <characteristic name="M" typeId="9d7a-6347-c726-adc8">3</characteristic>
         <characteristic name="WS" typeId="dcee-da4d-768f-7e34">7</characteristic>
@@ -68,7 +72,7 @@
         <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
       </characteristics>
     </profile>
-    <profile id="ba2b-56fa-67c1-ee4b" name="Squat Warrior" publicationId="9cb2-5b54-e948-fb7c" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+    <profile id="ba2b-56fa-67c1-ee4b" name="Squat Warrior" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
       <characteristics>
         <characteristic name="M" typeId="9d7a-6347-c726-adc8">3</characteristic>
         <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
@@ -81,7 +85,7 @@
         <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="c2a6-4d95-d790-6252" name="Hearthguard" publicationId="9cb2-5b54-e948-fb7c" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+    <profile id="c2a6-4d95-d790-6252" name="Hearthguard" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
       <characteristics>
         <characteristic name="M" typeId="9d7a-6347-c726-adc8">3</characteristic>
         <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
@@ -91,6 +95,45 @@
         <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
         <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
         <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9ed0-8158-dfc1-294d" name="Ancestor Lord" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">3</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">8</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">6</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">5</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">6</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">4</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">5</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">4</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9734-738f-a9fc-f32b" name="Squat Standard Bearer" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">3</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">5</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">4</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">3</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="36a2-3ffc-90cf-d12c" name="Engineer Guild Master" publicationId="9cb2-5b54-e948-fb7c" page="13" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">3</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">6</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">5</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">2</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">4</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">2</characteristic>
         <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
       </characteristics>
     </profile>
