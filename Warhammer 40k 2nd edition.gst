@@ -5,6 +5,7 @@
     <publication id="8167-4242-0f4b-4102" name="Wargear"/>
     <publication id="6f74-7607-b707-3103" name="Codex Angels of Death" shortName="CoAoD"/>
     <publication id="59b5-24e1-c498-df3f" name="White Dwarf"/>
+    <publication id="2a03-b07b-4b64-cc73" name="Dark Millenium"/>
   </publications>
   <costTypes>
     <costType id="30e6-896a-8419-941b" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
