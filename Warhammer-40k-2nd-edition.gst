@@ -6,6 +6,7 @@
     <publication id="6f74-7607-b707-3103" name="Codex Angels of Death" shortName="CoAoD"/>
     <publication id="59b5-24e1-c498-df3f" name="White Dwarf"/>
     <publication id="4593-0fcb-9177-7e7e" name="Codex Chaos"/>
+    <publication id="ec3e-df47-2012-56ca" name="Dark Millennium" shortName="DM" publicationDate="1994"/>
   </publications>
   <costTypes>
     <costType id="30e6-896a-8419-941b" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
