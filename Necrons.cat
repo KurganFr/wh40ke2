@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e935-7770-c378-d7c8" name="Necrons" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="c4b9-a6a1-afa3-b191" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="9cb2-5b54-e948-fb7c" name="Necron WD file"/>
+  </publications>
+  <selectionEntries>
+    <selectionEntry id="fb9b-3b22-9327-6d77" name="Necron Lord" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb10-f3fb-0f78-1afb" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8c61-4c2b-94f5-970f" name="Necron Lord" hidden="false" targetId="d637-c8b5-74ea-8f78" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d25f-4674-920d-487f" name="New CategoryLink" hidden="false" targetId="0ac4-2a9a-0b56-10ba" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9ebf-27f2-36e3-735d" name="Wargear" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bbe-f983-dfdc-bfa2" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="463d-d71e-6452-2d59" name="Stratergy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73a0-a9b4-28cd-fcc7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a35f-ea6c-20b7-3919" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="59f1-f5da-262c-e028" name="Necron Stratergy" hidden="false" targetId="ac55-eea5-4b1a-6f64" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="aeaf-bc33-6096-9acd" name="Staff of Light" hidden="false" collective="false" import="true" targetId="0080-751e-a310-8794" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d760-db20-c230-09b3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b652-8f6a-5278-6194" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5db8-1763-bfed-a255" name="Necron Super Alloy" hidden="false" collective="false" import="true" targetId="0e00-fb5a-5a04-d5f9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b7a-06b3-bd34-11d2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6904-b76c-24fd-2948" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="84.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2665-3ab9-51ea-dd8a" name="Necron Warriors" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="2b68-7871-b9d2-4cac" name="Necron Warriors" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfcc-e893-d08b-70f3" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b97d-7104-b98e-4250" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="3e97-e82a-1528-d05b" name="Squads" hidden="false" targetId="5ae9-298e-9f0b-364a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="44.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b810-47df-efa8-9b47" name="Scarabs" hidden="false" collective="false" import="true" type="upgrade">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="bbdd-7e57-bc1e-1351" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="2665-3ab9-51ea-dd8a" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="bbdd-7e57-bc1e-1351" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="2665-3ab9-51ea-dd8a" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81a0-7d18-ed46-c04a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbdd-7e57-bc1e-1351" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="5df6-fb40-2731-7e97" name="Necron Super Alloy" hidden="false" collective="false" import="true" targetId="0e00-fb5a-5a04-d5f9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aada-e18d-d208-ab71" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a6b-9a5e-23f9-c9a0" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2055-076f-6760-48f7" name="Necron Destroyer" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="eefe-591c-a725-0dde" name="New CategoryLink" hidden="false" targetId="3873-ad9b-45a5-5223" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="75.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="0080-751e-a310-8794" name="Staff of Light" publicationId="9cb2-5b54-e948-fb7c" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4aca-2278-717e-b17c" name="Staff of Light" hidden="false" targetId="6af1-6fe4-dc53-b375" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e00-fb5a-5a04-d5f9" name="Necron Super Alloy" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="832a-b6d3-bea3-a6d3" name="Necron Super Alloy" hidden="false" targetId="8ecc-04df-5843-85cf" type="rule"/>
+        <infoLink id="b274-2cdd-bffd-1ab1" name="Necron Super Alloy" hidden="false" targetId="fd69-d79b-1646-876a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="8ecc-04df-5843-85cf" name="Necron Super Alloy" hidden="false">
+      <description>All Necrons are constructed from a super hard alloy giving them a saving throw of 2+ on a D6.</description>
+    </rule>
+    <rule id="ac55-eea5-4b1a-6f64" name="Necron Stratergy" hidden="false">
+      <description>Necron Raiders strike without warning appearing where once there was nothing, avoiding guards and warning systems. ANecron player always deploys last and always has the first turn.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="6af1-6fe4-dc53-b375" name="Staff of Light" publicationId="9cb2-5b54-e948-fb7c" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">6</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">18</characteristic>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8">+1</characteristic>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f">-</characteristic>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">5</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">D3</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-2</characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">D6+D3+5</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Close combat</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fd69-d79b-1646-876a" name="Necron Super Alloy" hidden="false" typeId="a5cd-8edc-8e19-7e94" typeName="Armour">
+      <characteristics>
+        <characteristic name="Save Throw" typeId="13b6-56f8-41cf-f81a">2+</characteristic>
+        <characteristic name="Special" typeId="ec2b-7cde-d1b1-b9cb"/>
+      </characteristics>
+    </profile>
+    <profile id="d637-c8b5-74ea-8f78" name="Necron Lord" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">5</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">3</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">4</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">3</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba2b-56fa-67c1-ee4b" name="Necron Warrior" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">4</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">4</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">4</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">4</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">5</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9b19-10ba-fe00-0453" name="Scarab" hidden="false" typeId="f5d7-cbb5-360d-f242" typeName="Model Profile">
+      <characteristics>
+        <characteristic name="M" typeId="9d7a-6347-c726-adc8">8</characteristic>
+        <characteristic name="WS" typeId="dcee-da4d-768f-7e34">1</characteristic>
+        <characteristic name="BS" typeId="b534-9a50-035a-cfff">0</characteristic>
+        <characteristic name="S" typeId="0319-3c37-e162-4b91">3</characteristic>
+        <characteristic name="T" typeId="5f47-635d-1d18-f032">8</characteristic>
+        <characteristic name="W" typeId="0f97-a404-36e5-57f8">1</characteristic>
+        <characteristic name="I" typeId="00ea-652b-3c5a-c821">2</characteristic>
+        <characteristic name="A" typeId="e552-a664-ec27-63e1">1</characteristic>
+        <characteristic name="Ld" typeId="b35c-3d95-0b4a-5f88">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4ec0-1c40-9146-e3d5" name="Gauss-Flayer gun" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">0-6</characteristic>
+        <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">6-24</characteristic>
+        <characteristic name="Short &apos;to hit&apos;" typeId="dbf3-726f-fef4-1ff8">+1</characteristic>
+        <characteristic name="Long &apos;to hit&apos;" typeId="3926-95e6-6347-384f"/>
+        <characteristic name="Strength" typeId="fd3e-7b08-f3c3-6884">4</characteristic>
+        <characteristic name="Damage" typeId="9916-b170-c188-a52a">1</characteristic>
+        <characteristic name="Save Modifier" typeId="429a-7be0-2d38-ca70">-2</characteristic>
+        <characteristic name="Armour Penetration" typeId="7f26-5a9e-ad5d-c0db">D6+4</characteristic>
+        <characteristic name="Special" typeId="7a82-d213-668b-916b">Metal Flayer: armour penetration roll of 6 will ad another d6, thus totalling up to 2D6+4 to penetrate armour</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
