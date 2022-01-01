@@ -7,6 +7,7 @@
     <publication id="59b5-24e1-c498-df3f" name="White Dwarf"/>
     <publication id="4593-0fcb-9177-7e7e" name="Codex Chaos"/>
     <publication id="ec3e-df47-2012-56ca" name="Dark Millennium" shortName="DM" publicationDate="1994"/>
+    <publication id="3369-5518-08b8-7896" name="Codex Tyranids"/>
   </publications>
   <costTypes>
     <costType id="30e6-896a-8419-941b" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -101,7 +102,7 @@
         <infoLink id="6342-e7a2-0db9-8544" name="Autogun" hidden="false" targetId="c1c2-3260-7e29-a9e2" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="30e6-896a-8419-941b" value="0.0"/>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="773b-bd38-0199-8055" name="Banshee Mask" hidden="false" collective="false" import="true" type="upgrade">
@@ -731,6 +732,59 @@
         <cost name="Pts" typeId="30e6-896a-8419-941b" value="25.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="50ae-0f29-cd61-6c6d" name="Flak armour" publicationId="3369-5518-08b8-7896" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d36f-3581-6e48-5e5e" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="012d-b376-8dfc-e350" name="Flak armour" publicationId="3369-5518-08b8-7896" page="78" hidden="false" collective="false" import="true" targetId="50ae-0f29-cd61-6c6d" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8ad6-62fd-7473-93b8" name="Mesh armour" publicationId="3369-5518-08b8-7896" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae1a-fa00-daba-285a" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="5e76-33dc-1257-0444" name="Mesh armour" publicationId="3369-5518-08b8-7896" page="78" hidden="false" collective="false" import="true" targetId="8ad6-62fd-7473-93b8" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="3.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="84f8-65dc-0992-9e26" name="carapace armour" publicationId="3369-5518-08b8-7896" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="7e45-d678-c545-f231" name="carapace armour" publicationId="3369-5518-08b8-7896" page="78" hidden="false" collective="false" import="true" targetId="84f8-65dc-0992-9e26" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2dd-030d-1d6f-67b4" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="30e6-896a-8419-941b" value="7.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7bfb-15ad-9117-18a3" name="Auto-cannon" publicationId="3369-5518-08b8-7896" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="86f9-2701-29a7-f599" name="Auto-cannon" hidden="false" targetId="bced-7550-997c-7142" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="30e6-896a-8419-941b" value="25.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="467f-11e9-ea0f-efd7" name="Wargear cards (all races)" hidden="false" collective="false" import="true">
@@ -1338,7 +1392,7 @@ Blinds unprotected troops on 4, 5 of 6.</description>
         <characteristic name="Special" typeId="7a82-d213-668b-916b">wounds automatically, except for demons, avatars, genestealers and tyranids. Does not apply to hybrids.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b1e2-903a-e8a6-5ba2" name="Ogryn ripper gun" publicationId="8167-4242-0f4b-4102" page="27" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
+    <profile id="b1e2-903a-e8a6-5ba2" name="Ripper gun" publicationId="8167-4242-0f4b-4102" page="27" hidden="false" typeId="aac8-9928-a1ed-ecea" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Short Range" typeId="1289-8900-4877-8f5f">0-6</characteristic>
         <characteristic name="Long Range" typeId="9f0a-0891-bd0a-0794">6-12</characteristic>
